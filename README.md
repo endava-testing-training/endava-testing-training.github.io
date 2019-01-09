@@ -1,2 +1,2 @@
-# endava-testing-management.github.io
-Endava - Testing Management - Functional Testing Training - Web Page
+# endava-testing-training.github.io
+Endava - Testing Training - Web Page
