@@ -76,6 +76,607 @@ Apply techniques  of software testing in projects. Select the appropriate testin
         </div>
         <div class="bs-example">
           <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Functional</a>
+                    </h4>
+                  </div>
+                  <div id="collapseSix" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <th>Functionality</th>
+                            <th>Specifications</th>
+                          </thead>
+                          <tbody>
+                            <td></td>
+                          </tbody>
+                        </table>
+                        <table class="table">
+                          <thead>
+                            <th>General</th>
+                          </thead>
+                          <tbody>
+                            <td>For web applications, these scenarios should be tested on multiple browsers like IE, FF,
+                              Chrome, Safari, Brave,etc, with versions approved by the client.</td>
+                          </tbody>
+                        </table>
+                        <table class="table">
+                          <thead>
+                            <th>User Login / Permissions</th>
+                          </thead>
+                          <tbody>
+    
+                          <tbody>
+                            <tr>
+                              <td>User and password incorrect.</td>
+                              <td>
+                                <ul>
+                                  <li>Login in the application with unexisting user and password.</li>
+                                  <li>Login in the application with not matching user and password.</li>
+                                  <li>Login in the application with existing user and wrong password.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>User and password invalid</td>
+                              <td>
+                                <ul>
+                                  <li>Login in the application without differentiating between uppercase and lowercase</li>
+                                  <li>Login in the application with invalid,blank characters</li>
+                                  <li>Login in the application with very short or large users and passwords</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>User and password correct without permissions.</td>
+                              <td>
+                                <ul>
+                                  <li>Login in the application with existing user name and password but without permissions
+                                    to access to the sections to test. (Log in with different user roles e.g. admin user,
+                                    guest user etc.)</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>User and password correct with permissions.</td>
+                              <td>
+                                <ul>
+                                  <li>Login in the application with existing user name and password with permissions to
+                                    access to the sections to test. (Log in with different user roles e.g. admin user,
+                                    guest user etc.)</li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                          </tbody>
+                        </table>
+                        <table class="table">
+                          <thead>
+                            <th>Screens</th>
+                          </thead>
+                          <tbody>
+    
+                          <tbody>
+                            <tr>
+                              <td>Content of the screen (Mockups)</td>
+                              <td>
+                                <ul>
+                                  <li>Verify that all information shown on screen matches with the one shown on the mockup.
+                                    All fields should located exactly as in the mockup.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Ortography and sintax.</td>
+                              <td>
+                                <ul>
+                                  <li>Verify that all words written on the screen are correct. Also verify sintax.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Elements on the screen.</td>
+                              <td>
+                                <ul>
+                                  <li>All mandatory fields should be validated and indicated by an asterisk (*) symbol.</li>
+                                  <li>Text boxes: Data type, maximum or minimun amount of characters./ Check for negative
+                                    numbers if allowed for numeric fields./ Check amount fields with decimal number values.</li>
+                                  <li>Combo boxes: Options shown are the same as the specified/ Combo boxes fields should
+                                    have the first entry as blank or text like ‘Select’.</li>
+                                  <li>Check boxes: Selection and unslection.</li>
+                                  <li>Suggest box: Options shown are the same as the specified.</li>
+                                  <li>Element availability: available or grayed out.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                          </tbody>
+                        </table>
+                        <table class="table">
+                          <thead>
+                            <th>Create</th>
+                          </thead>
+                          <tbody>
+    
+                          <tbody>
+                            <tr>
+                              <td>Create with incorrect information or format.</td>
+                              <td>
+                                <ul>
+                                  <li>Insert incorrect format data.</li>
+                                  <li>Insert more or less characters allowed.</li>
+                                  <li>Verify Save format or message (Grayed out or error message)</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Create with missing required fields.</td>
+                              <td>
+                                <ul>
+                                  <li>Complete information without completing all required fields.</li>
+                                  <li>Verify Save format or message (Grayed out or error message)</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Create with all required fields.</td>
+                              <td>
+                                <ul>
+                                  <li>Complete information with correct format and amount.</li>
+                                  <li>Complete Required fields.</li>
+                                  <li>Verify Save format (Available)</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Create with all fields.</td>
+                              <td>
+                                <ul>
+                                  <li>Complete information with correct format and amount.</li>
+                                  <li>Complete Required and No Required fields.</li>
+                                  <li>Verify Save format (Available)</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Create and Cancel.</td>
+                              <td>
+                                <ul>
+                                  <li>Record should not be displayed on the screen or saved on database.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Create and Save.</td>
+                              <td>
+                                <ul>
+                                  <li>Record should be displayed on the screen with the information entered.</li>
+                                  <li>The user should not be able to submit page twice by pressing submit button in quick
+                                    succession.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Create and Save. Verify database (If permissions exists)</td>
+                              <td>
+                                <ul>
+                                  <li> Record should be stored on database with the information entered.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                          </tbody>
+                        </table>
+                        <table class="table">
+                          <thead>
+                            <th>Modify</th>
+                          </thead>
+                          <tbody>
+    
+                          <tbody>
+                            <tr>
+                              <td>Editable fields</td>
+                              <td>
+                                <ul>
+                                  <li>Control which fields are avaialable to change and which ones should not.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Edit with incorrect information or format.</td>
+                              <td>
+                                <ul>
+                                  <li>Insert incorrect format data.</li>
+                                  <li>Insert more or less characters allowed.</li>
+                                  <li>Verify Save format or message (Grayed out or error message)</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Edit with missing required fields.</td>
+                              <td>
+                                <ul>
+                                  <li>Delete information from a required field.</li>
+                                  <li>Verify Save format or message (Grayed out or error message)</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Edit with all required fields.</td>
+                              <td>
+                                <ul>
+                                  <li>Edit information with correct format and amount.</li>
+                                  <li>Edit any Required field.</li>
+                                  <li>Verify Save format (Available)</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Edit with all fields.</td>
+                              <td>
+                                <ul>
+                                  <li>Edit information with correct format and amount.</li>
+                                  <li>Edit Required and No Required fields.</li>
+                                  <li>Verify Save format (Available)</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Edit and Cancel.</td>
+                              <td>
+                                <ul>
+                                  <li>Record should not be modified on the screen or saved on database.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Edit and Save.</td>
+                              <td>
+                                <ul>
+                                  <li>Record should be displayed on the screen with the information modified.</li>
+                                  <li>The user should not be able to submit page twice by pressing submit button in quick
+                                    succession.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Create and Save. Verify database (If permissions exists)</td>
+                              <td>
+                                <ul>
+                                  <li> Record should be modified on database with the information entered.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table class="table">
+                          <thead>
+                            <th>Delete</th>
+                          </thead>
+                          <tbody>
+    
+                          <tbody>
+                            <tr>
+                              <td>Delete functionality’ for any record on a page should ask for a confirmation.</td>
+                              <td>
+                                <ul>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Delete with confirmation message.</td>
+                              <td>
+                                <ul>
+                                  <li>Message to confirm deletion is displayed on the screen.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Delete with confimation message and Cancel.</td>
+                              <td>
+                                <ul>
+                                  <li>Record should still be shown on screen.</li>
+                                  <li>Record should still be stored on database.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Delete with confimation message and Confirm.</td>
+                              <td>
+                                <ul>
+                                  <li>Record is not displayed on the screen.</li>
+                                  <li>If Delete is logic, the record should be marked on database as True.</li>
+                                  <li>If Delete is physical, record should not be stored on database anymore.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table class="table">
+                          <thead>
+                            <th>ComboBoxes</th>
+                          </thead>
+                          <tbody>
+    
+                          <tbody>
+                            <tr>
+                              <td>Default ComboBox option.</td>
+                              <td>
+                                <ul>
+                                  <li>Verify dedefault option (Particular option, All, Select One, Select Multiple, Etc.)</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>ComboBoxe content.</td>
+                              <td>
+                                <ul>
+                                  <li>All options shown on combobox must be the same as the requirement.</li>
+                                  <li>Verify ortography of the options.</li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+    
+                        </table>
+                        <table class="table">
+                            <thead>
+                              <th>Scroll</th>
+                            </thead>
+                            <tbody>
+                            <tbody>
+                              <tr>
+                                <td>Scroll</td>
+                                <td>
+                                  <ul>
+                                    <li>Shown when needed.</li>
+                                    <li>Correct scrolling.</li>
+                                  </ul>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="table">
+                              <thead>
+                                <th>Calendar and Date Validations</th>
+                              </thead>
+                              <tbody>
+                              <tbody>
+                                <tr>
+                                  <td>Actual Date selection and other dates.</td>
+                                  <td>
+                                    <ul>
+                                        <li>Select actual date. Verify if it is correctly shown on calendar.</li>
+                                        <li>Select past date. Verify if it is correctly shown on calendar.</li>
+                                        <li>Select future date. Verify if it is correctly shown on calendar.</li>
+                                    </ul>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>Date Format validation</td>
+                                    <td>
+                                      <ul>
+                                          <li>Control the format of the date if date picker allows it.</li>
+                                      </ul>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                      <td>Start Date and End Date validations</td>
+                                      <td>
+                                        <ul>
+                                            <li>Validate when enter a start date bigger than the end date.</li>
+                                            <li>Validate when any of the dates is empty.</li>
+                                            <li>Validate when enter a start date smaller that the end date.</li>
+                                        </ul>
+                                      </td>
+                                    </tr>
+                              </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                  <th>Calendar and Date Validations</th>
+                                </thead>
+                                <tbody>
+                                <tbody>
+                                  <tr>
+                                    <td>Actual Date selection and other dates.</td>
+                                    <td>
+                                      <ul>
+                                          <li>Select actual date. Verify if it is correctly shown on calendar.</li>
+                                          <li>Select past date. Verify if it is correctly shown on calendar.</li>
+                                          <li>Select future date. Verify if it is correctly shown on calendar.</li>
+                                      </ul>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                      <td>Date Format validation</td>
+                                      <td>
+                                        <ul>
+                                            <li>Control the format of the date if date picker allows it.</li>
+                                        </ul>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Start Date and End Date validations</td>
+                                        <td>
+                                          <ul>
+                                              <li>Validate when enter a start date bigger than the end date.</li>
+                                              <li>Validate when any of the dates is empty.</li>
+                                              <li>Validate when enter a start date smaller that the end date.</li>
+                                          </ul>
+                                        </td>
+                                      </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                  <th>Search</th>
+                                </thead>
+                                <tbody>
+                                <tbody>
+                                  <tr>
+                                    <td>Search with empty criteria</td>
+                                    <td>
+                                      <ul>
+                                          <li>If blank is All, verify all records are displayed (requirement).</li>
+                                          <li>If blank is Nothing, verify no records are displayed (requirement).</li>
+                                      </ul>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                      <td>Search without matching results.</td>
+                                      <td>
+                                        <ul>
+                                            <li>Insert search criteria that do not have any result.</li>
+                                            <li>Verify message or behavior of the search list.</li>
+                                            <li>The total number of results should be displayed in the result grid.</li>
+                                            <li>Search criteria used for searching should be displayed in the result grid.</li>
+                                        </ul>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Search with matching result.</td>
+                                        <td>
+                                          <ul>
+                                              <li>Insert search criteria that has results.</li>
+                                              <li>Verify information received from search that match with selected criteria.</li>
+                                              <li>Verify search when requirement is content.</li>
+                                              <li>Verify search when requirement is exact match.</li>
+                                              <li>The total number of results should be displayed in the result grid.</li>
+                                              <li>Search criteria used for searching should be displayed in the result grid.</li>
+                                              <li>Result grid values should be sorted by default column.</li>
+                                              <li>Sorted columns should be displayed with a sort icon.</li>
+                                              <li>Ascending and descending sorting functionality should work for columns supported by data sorting</li>
+                                              <li>Pagination should be enabled when there are more results than the default result count per page.</li>
+                                          </ul>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                          <td>Control sort of the received results.</td>
+                                          <td>
+                                            <ul>
+                                                <li>Control the sort of results matches with the sort of the original list.</li>
+                                            </ul>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Control list when criteria entered is deleted.</td>
+                                            <td>
+                                              <ul>
+                                                  <li>Mantain filtered list (if required)</li>
+                                                  <li>Shown all records (if required)</li>
+                                              </ul>
+                                            </td>
+                                          </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                  <th>Pagination</th>
+                                </thead>
+                                <tbody>
+                                <tbody>
+                                  <tr>
+                                    <td>Pagination options</td>
+                                    <td>
+                                      <ul>
+                                          <li>Pagination options from default.</li>
+                                          <li>Control when the grid has less rows that the minimum of the pagination.</li>
+                                          <li>Control when the grid has more rows that the minimun of the pagination.</li>
+                                          <li>Check for Next, Previous, First and Last page pagination functionality.</li>
+                                      </ul>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                  <th>Sort columns</th>
+                                </thead>
+                                <tbody>
+                                <tbody>
+                                  <tr>
+                                    <td>Sort columns</td>
+                                    <td>
+                                      <ul>
+                                          <li>Check page sorting functionality after add/edit/delete operations on any record.</li>
+                                          <li>Test with each column that allows sorting.</li>
+                                          <li>Verify type of sort when clicking for a second time on the sort.</li>
+                                      </ul>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                  <th>Print</th>
+                                </thead>
+                                <tbody>
+                                <tbody>
+                                  <tr>
+                                    <td>Print option</td>
+                                    <td>
+                                      <ul>
+                                          <li>Control preview of print.</li>
+                                          <li>Control button funcitonality. </li>
+                                      </ul>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                  <th>Image upload</th>
+                                </thead>
+                                <tbody>
+                                <tbody>
+                                  <tr>
+                                    <td>Also applicable for other file upload functionality</td>
+                                    <td>
+                                      <ul>
+                                          <li>Check for uploaded image path.</li>
+                                          <li>Check image upload and change functionality.</li>
+                                          <li>Check image upload functionality with image files of different extensions (e.g. JPEG, PNG, BMP etc.)</li>
+                                          <li>Check image upload functionality with images having space or any other allowed special character in the file name.</li>
+                                          <li>Check duplicate name image upload.</li>
+                                          <li>Check image upload with image size greater than the max allowed size. The Proper error message should be displayed.</li>
+                                          <li>Check image upload functionality with file types other than images (e.g. txt, doc, pdf, exe etc.). A proper error message should be displayed.</li>
+                                          <li>Check if images of specified height and width (if defined) are accepted otherwise rejected.</li>
+                                          <li>The image upload progress bar should appear for large size images.</li>
+                                          <li>Check if cancel button functionality is working in between upload process.</li>
+                                          <li>Check if file selection dialog shows only supported files listed.</li>
+                                          <li>Check multiple images upload functionality.</li>
+                                          <li>Check image quality after upload. Image quality should not be changed after upload.</li>
+                                          <li>Check if the user is able to use/view the uploaded images.</li>
+                                      </ul>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                  <th>Specific test cases</th>
+                                </thead>
+                                <tbody>
+                                <tbody>
+                                  <tr>
+                                    <td>Requirement</td>
+                                    <td>
+                                      <ul>
+                                          <li>Write one test case per validation from requierement.</li>
+                                          <li>Write one test case per calculation from requirement.</li>
+                                          <li>Write one test case per functionality from requirement.</li>
+                                      </ul>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                      </div>
+                    </div>
+                  </div>
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
@@ -264,607 +865,7 @@ Apply techniques  of software testing in projects. Select the appropriate testin
                 </div>
               </div>
             </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Funtional</a>
-                </h4>
-              </div>
-              <div id="collapseSix" class="panel-collapse collapse">
-                <div class="panel-body">
-                  <div class="table-responsive">
-                    <table class="table">
-                      <thead>
-                        <th>Functionality</th>
-                        <th>Specifications</th>
-                      </thead>
-                      <tbody>
-                        <td></td>
-                      </tbody>
-                    </table>
-                    <table class="table">
-                      <thead>
-                        <th>General</th>
-                      </thead>
-                      <tbody>
-                        <td>For web applications, these scenarios should be tested on multiple browsers like IE, FF,
-                          Chrome, Safari, Brave,etc, with versions approved by the client.</td>
-                      </tbody>
-                    </table>
-                    <table class="table">
-                      <thead>
-                        <th>User Login / Permissions</th>
-                      </thead>
-                      <tbody>
-
-                      <tbody>
-                        <tr>
-                          <td>User and password incorrect.</td>
-                          <td>
-                            <ul>
-                              <li>Login in the application with unexisting user and password.</li>
-                              <li>Login in the application with not matching user and password.</li>
-                              <li>Login in the application with existing user and wrong password.</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>User and password invalid</td>
-                          <td>
-                            <ul>
-                              <li>Login in the application without differentiating between uppercase and lowercase</li>
-                              <li>Login in the application with invalid,blank characters</li>
-                              <li>Login in the application with very short or large users and passwords</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>User and password correct without permissions.</td>
-                          <td>
-                            <ul>
-                              <li>Login in the application with existing user name and password but without permissions
-                                to access to the sections to test. (Log in with different user roles e.g. admin user,
-                                guest user etc.)</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>User and password correct with permissions.</td>
-                          <td>
-                            <ul>
-                              <li>Login in the application with existing user name and password with permissions to
-                                access to the sections to test. (Log in with different user roles e.g. admin user,
-                                guest user etc.)</li>
-                            </ul>
-                          </td>
-                        </tr>
-                      </tbody>
-                      </tbody>
-                    </table>
-                    <table class="table">
-                      <thead>
-                        <th>Screens</th>
-                      </thead>
-                      <tbody>
-
-                      <tbody>
-                        <tr>
-                          <td>Content of the screen (Mockups)</td>
-                          <td>
-                            <ul>
-                              <li>Verify that all information shown on screen matches with the one shown on the mockup.
-                                All fields should located exactly as in the mockup.</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Ortography and sintax.</td>
-                          <td>
-                            <ul>
-                              <li>Verify that all words written on the screen are correct. Also verify sintax.</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Elements on the screen.</td>
-                          <td>
-                            <ul>
-                              <li>All mandatory fields should be validated and indicated by an asterisk (*) symbol.</li>
-                              <li>Text boxes: Data type, maximum or minimun amount of characters./ Check for negative
-                                numbers if allowed for numeric fields./ Check amount fields with decimal number values.</li>
-                              <li>Combo boxes: Options shown are the same as the specified/ Combo boxes fields should
-                                have the first entry as blank or text like ‘Select’.</li>
-                              <li>Check boxes: Selection and unslection.</li>
-                              <li>Suggest box: Options shown are the same as the specified.</li>
-                              <li>Element availability: available or grayed out.</li>
-                            </ul>
-                          </td>
-                        </tr>
-                      </tbody>
-                      </tbody>
-                    </table>
-                    <table class="table">
-                      <thead>
-                        <th>Create</th>
-                      </thead>
-                      <tbody>
-
-                      <tbody>
-                        <tr>
-                          <td>Create with incorrect information or format.</td>
-                          <td>
-                            <ul>
-                              <li>Insert incorrect format data.</li>
-                              <li>Insert more or less characters allowed.</li>
-                              <li>Verify Save format or message (Grayed out or error message)</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Create with missing required fields.</td>
-                          <td>
-                            <ul>
-                              <li>Complete information without completing all required fields.</li>
-                              <li>Verify Save format or message (Grayed out or error message)</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Create with all required fields.</td>
-                          <td>
-                            <ul>
-                              <li>Complete information with correct format and amount.</li>
-                              <li>Complete Required fields.</li>
-                              <li>Verify Save format (Available)</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Create with all fields.</td>
-                          <td>
-                            <ul>
-                              <li>Complete information with correct format and amount.</li>
-                              <li>Complete Required and No Required fields.</li>
-                              <li>Verify Save format (Available)</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Create and Cancel.</td>
-                          <td>
-                            <ul>
-                              <li>Record should not be displayed on the screen or saved on database.</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Create and Save.</td>
-                          <td>
-                            <ul>
-                              <li>Record should be displayed on the screen with the information entered.</li>
-                              <li>The user should not be able to submit page twice by pressing submit button in quick
-                                succession.</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Create and Save. Verify database (If permissions exists)</td>
-                          <td>
-                            <ul>
-                              <li> Record should be stored on database with the information entered.</li>
-                            </ul>
-                          </td>
-                        </tr>
-                      </tbody>
-                      </tbody>
-                    </table>
-                    <table class="table">
-                      <thead>
-                        <th>Modify</th>
-                      </thead>
-                      <tbody>
-
-                      <tbody>
-                        <tr>
-                          <td>Editable fields</td>
-                          <td>
-                            <ul>
-                              <li>Control which fields are avaialable to change and which ones should not.</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Edit with incorrect information or format.</td>
-                          <td>
-                            <ul>
-                              <li>Insert incorrect format data.</li>
-                              <li>Insert more or less characters allowed.</li>
-                              <li>Verify Save format or message (Grayed out or error message)</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Edit with missing required fields.</td>
-                          <td>
-                            <ul>
-                              <li>Delete information from a required field.</li>
-                              <li>Verify Save format or message (Grayed out or error message)</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Edit with all required fields.</td>
-                          <td>
-                            <ul>
-                              <li>Edit information with correct format and amount.</li>
-                              <li>Edit any Required field.</li>
-                              <li>Verify Save format (Available)</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Edit with all fields.</td>
-                          <td>
-                            <ul>
-                              <li>Edit information with correct format and amount.</li>
-                              <li>Edit Required and No Required fields.</li>
-                              <li>Verify Save format (Available)</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Edit and Cancel.</td>
-                          <td>
-                            <ul>
-                              <li>Record should not be modified on the screen or saved on database.</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Edit and Save.</td>
-                          <td>
-                            <ul>
-                              <li>Record should be displayed on the screen with the information modified.</li>
-                              <li>The user should not be able to submit page twice by pressing submit button in quick
-                                succession.</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Create and Save. Verify database (If permissions exists)</td>
-                          <td>
-                            <ul>
-                              <li> Record should be modified on database with the information entered.</li>
-                            </ul>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table class="table">
-                      <thead>
-                        <th>Delete</th>
-                      </thead>
-                      <tbody>
-
-                      <tbody>
-                        <tr>
-                          <td>Delete functionality’ for any record on a page should ask for a confirmation.</td>
-                          <td>
-                            <ul>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Delete with confirmation message.</td>
-                          <td>
-                            <ul>
-                              <li>Message to confirm deletion is displayed on the screen.</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Delete with confimation message and Cancel.</td>
-                          <td>
-                            <ul>
-                              <li>Record should still be shown on screen.</li>
-                              <li>Record should still be stored on database.</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Delete with confimation message and Confirm.</td>
-                          <td>
-                            <ul>
-                              <li>Record is not displayed on the screen.</li>
-                              <li>If Delete is logic, the record should be marked on database as True.</li>
-                              <li>If Delete is physical, record should not be stored on database anymore.</li>
-                            </ul>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table class="table">
-                      <thead>
-                        <th>ComboBoxes</th>
-                      </thead>
-                      <tbody>
-
-                      <tbody>
-                        <tr>
-                          <td>Default ComboBox option.</td>
-                          <td>
-                            <ul>
-                              <li>Verify dedefault option (Particular option, All, Select One, Select Multiple, Etc.)</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>ComboBoxe content.</td>
-                          <td>
-                            <ul>
-                              <li>All options shown on combobox must be the same as the requirement.</li>
-                              <li>Verify ortography of the options.</li>
-                            </ul>
-                          </td>
-                        </tr>
-                      </tbody>
-
-                    </table>
-                    <table class="table">
-                        <thead>
-                          <th>Scroll</th>
-                        </thead>
-                        <tbody>
-                        <tbody>
-                          <tr>
-                            <td>Scroll</td>
-                            <td>
-                              <ul>
-                                <li>Shown when needed.</li>
-                                <li>Correct scrolling.</li>
-                              </ul>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <table class="table">
-                          <thead>
-                            <th>Calendar and Date Validations</th>
-                          </thead>
-                          <tbody>
-                          <tbody>
-                            <tr>
-                              <td>Actual Date selection and other dates.</td>
-                              <td>
-                                <ul>
-                                    <li>Select actual date. Verify if it is correctly shown on calendar.</li>
-                                    <li>Select past date. Verify if it is correctly shown on calendar.</li>
-                                    <li>Select future date. Verify if it is correctly shown on calendar.</li>
-                                </ul>
-                              </td>
-                            </tr>
-                            <tr>
-                                <td>Date Format validation</td>
-                                <td>
-                                  <ul>
-                                      <li>Control the format of the date if date picker allows it.</li>
-                                  </ul>
-                                </td>
-                              </tr>
-                              <tr>
-                                  <td>Start Date and End Date validations</td>
-                                  <td>
-                                    <ul>
-                                        <li>Validate when enter a start date bigger than the end date.</li>
-                                        <li>Validate when any of the dates is empty.</li>
-                                        <li>Validate when enter a start date smaller that the end date.</li>
-                                    </ul>
-                                  </td>
-                                </tr>
-                          </tbody>
-                        </table>
-                        <table class="table">
-                            <thead>
-                              <th>Calendar and Date Validations</th>
-                            </thead>
-                            <tbody>
-                            <tbody>
-                              <tr>
-                                <td>Actual Date selection and other dates.</td>
-                                <td>
-                                  <ul>
-                                      <li>Select actual date. Verify if it is correctly shown on calendar.</li>
-                                      <li>Select past date. Verify if it is correctly shown on calendar.</li>
-                                      <li>Select future date. Verify if it is correctly shown on calendar.</li>
-                                  </ul>
-                                </td>
-                              </tr>
-                              <tr>
-                                  <td>Date Format validation</td>
-                                  <td>
-                                    <ul>
-                                        <li>Control the format of the date if date picker allows it.</li>
-                                    </ul>
-                                  </td>
-                                </tr>
-                                <tr>
-                                    <td>Start Date and End Date validations</td>
-                                    <td>
-                                      <ul>
-                                          <li>Validate when enter a start date bigger than the end date.</li>
-                                          <li>Validate when any of the dates is empty.</li>
-                                          <li>Validate when enter a start date smaller that the end date.</li>
-                                      </ul>
-                                    </td>
-                                  </tr>
-                            </tbody>
-                        </table>
-                        <table class="table">
-                            <thead>
-                              <th>Search</th>
-                            </thead>
-                            <tbody>
-                            <tbody>
-                              <tr>
-                                <td>Search with empty criteria</td>
-                                <td>
-                                  <ul>
-                                      <li>If blank is All, verify all records are displayed (requirement).</li>
-                                      <li>If blank is Nothing, verify no records are displayed (requirement).</li>
-                                  </ul>
-                                </td>
-                              </tr>
-                              <tr>
-                                  <td>Search without matching results.</td>
-                                  <td>
-                                    <ul>
-                                        <li>Insert search criteria that do not have any result.</li>
-                                        <li>Verify message or behavior of the search list.</li>
-                                        <li>The total number of results should be displayed in the result grid.</li>
-                                        <li>Search criteria used for searching should be displayed in the result grid.</li>
-                                    </ul>
-                                  </td>
-                                </tr>
-                                <tr>
-                                    <td>Search with matching result.</td>
-                                    <td>
-                                      <ul>
-                                          <li>Insert search criteria that has results.</li>
-                                          <li>Verify information received from search that match with selected criteria.</li>
-                                          <li>Verify search when requirement is content.</li>
-                                          <li>Verify search when requirement is exact match.</li>
-                                          <li>The total number of results should be displayed in the result grid.</li>
-                                          <li>Search criteria used for searching should be displayed in the result grid.</li>
-                                          <li>Result grid values should be sorted by default column.</li>
-                                          <li>Sorted columns should be displayed with a sort icon.</li>
-                                          <li>Ascending and descending sorting functionality should work for columns supported by data sorting</li>
-                                          <li>Pagination should be enabled when there are more results than the default result count per page.</li>
-                                      </ul>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                      <td>Control sort of the received results.</td>
-                                      <td>
-                                        <ul>
-                                            <li>Control the sort of results matches with the sort of the original list.</li>
-                                        </ul>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Control list when criteria entered is deleted.</td>
-                                        <td>
-                                          <ul>
-                                              <li>Mantain filtered list (if required)</li>
-                                              <li>Shown all records (if required)</li>
-                                          </ul>
-                                        </td>
-                                      </tr>
-                            </tbody>
-                        </table>
-                        <table class="table">
-                            <thead>
-                              <th>Pagination</th>
-                            </thead>
-                            <tbody>
-                            <tbody>
-                              <tr>
-                                <td>Pagination options</td>
-                                <td>
-                                  <ul>
-                                      <li>Pagination options from default.</li>
-                                      <li>Control when the grid has less rows that the minimum of the pagination.</li>
-                                      <li>Control when the grid has more rows that the minimun of the pagination.</li>
-                                      <li>Check for Next, Previous, First and Last page pagination functionality.</li>
-                                  </ul>
-                                </td>
-                              </tr>
-                            </tbody>
-                        </table>
-                        <table class="table">
-                            <thead>
-                              <th>Sort columns</th>
-                            </thead>
-                            <tbody>
-                            <tbody>
-                              <tr>
-                                <td>Sort columns</td>
-                                <td>
-                                  <ul>
-                                      <li>Check page sorting functionality after add/edit/delete operations on any record.</li>
-                                      <li>Test with each column that allows sorting.</li>
-                                      <li>Verify type of sort when clicking for a second time on the sort.</li>
-                                  </ul>
-                                </td>
-                              </tr>
-                            </tbody>
-                        </table>
-                        <table class="table">
-                            <thead>
-                              <th>Print</th>
-                            </thead>
-                            <tbody>
-                            <tbody>
-                              <tr>
-                                <td>Print option</td>
-                                <td>
-                                  <ul>
-                                      <li>Control preview of print.</li>
-                                      <li>Control button funcitonality. </li>
-                                  </ul>
-                                </td>
-                              </tr>
-                            </tbody>
-                        </table>
-                        <table class="table">
-                            <thead>
-                              <th>Image upload</th>
-                            </thead>
-                            <tbody>
-                            <tbody>
-                              <tr>
-                                <td>Also applicable for other file upload functionality</td>
-                                <td>
-                                  <ul>
-                                      <li>Check for uploaded image path.</li>
-                                      <li>Check image upload and change functionality.</li>
-                                      <li>Check image upload functionality with image files of different extensions (e.g. JPEG, PNG, BMP etc.)</li>
-                                      <li>Check image upload functionality with images having space or any other allowed special character in the file name.</li>
-                                      <li>Check duplicate name image upload.</li>
-                                      <li>Check image upload with image size greater than the max allowed size. The Proper error message should be displayed.</li>
-                                      <li>Check image upload functionality with file types other than images (e.g. txt, doc, pdf, exe etc.). A proper error message should be displayed.</li>
-                                      <li>Check if images of specified height and width (if defined) are accepted otherwise rejected.</li>
-                                      <li>The image upload progress bar should appear for large size images.</li>
-                                      <li>Check if cancel button functionality is working in between upload process.</li>
-                                      <li>Check if file selection dialog shows only supported files listed.</li>
-                                      <li>Check multiple images upload functionality.</li>
-                                      <li>Check image quality after upload. Image quality should not be changed after upload.</li>
-                                      <li>Check if the user is able to use/view the uploaded images.</li>
-                                  </ul>
-                                </td>
-                              </tr>
-                            </tbody>
-                        </table>
-                        <table class="table">
-                            <thead>
-                              <th>Specific test cases</th>
-                            </thead>
-                            <tbody>
-                            <tbody>
-                              <tr>
-                                <td>Requirement</td>
-                                <td>
-                                  <ul>
-                                      <li>Write one test case per validation from requierement.</li>
-                                      <li>Write one test case per calculation from requirement.</li>
-                                      <li>Write one test case per functionality from requirement.</li>
-                                  </ul>
-                                </td>
-                              </tr>
-                            </tbody>
-                        </table>
-                  </div>
-                </div>
-              </div>
+            
             </div>
           </div>
 
