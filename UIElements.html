@@ -74,6 +74,14 @@ Apply techniques  of software testing in projects. Select the appropriate testin
             class="img-responsive center-block img-logo" />
           <h1 class="rounded red">Endava - User Interface Elements</h1>
         </div>
+        <table class="table">
+                  <tbody>
+                  <th><li>Input Controls: checkboxes, radio buttons, dropdown lists, list boxes, buttons, toggles, text fields, date field.</li>
+                  <li>Navigational Components: breadcrumb, slider, search field, pagination, slider, tags, icons.</li>
+                  <li>Informational Components: tooltips, icons, progress bar, notifications, message boxes, modal windows.</li>
+                  <li>Containers: accordion.</li></th>
+                   </tbody>
+                  </table>
         <div class="bs-example">
           <div class="panel-group" id="accordion">
               <div class="panel panel-default">
@@ -83,16 +91,7 @@ Apply techniques  of software testing in projects. Select the appropriate testin
                     </h4>
                   </div>
                   <ul>
-                   <table class="table">
-                          <tbody>
-                            <th><li>Input Controls: checkboxes, radio buttons, dropdown lists, list boxes, buttons, toggles, text fields, date field.</li>
-                  <li>Navigational Components: breadcrumb, slider, search field, pagination, slider, tags, icons.</li>
-                  <li>Informational Components: tooltips, icons, progress bar, notifications, message boxes, modal windows.</li>
-                  <li>Containers: accordion.</li></th>
-                          </tbody>
-                  
-                  
-                  </table>
+                   
                   </ul>
                   <div id="collapseOne" class="panel-collapse collapse in">
                     <div class="panel-body">
@@ -155,52 +154,310 @@ Apply techniques  of software testing in projects. Select the appropriate testin
 							</td>
                           </tbody>
                           <tbody>
-                            <td>Radio buttons</td>
-                            <td>Radio buttons2</td>
-                            <td>Radio buttons3</td>
+                            <td>Buttons</td>
+                            <td>A button indicates an action upon touch and is typically labeled using text, an icon, or both.</td>
+                            <td>
+							  <button type="button" class="btn">Basic</button>
+							  <button type="button" class="btn btn-default">Default</button>
+							  <button type="button" class="btn btn-primary">Primary</button>
+							  <button type="button" class="btn btn-success">Success</button>
+							  	<button type="button" class="btn btn-info">Info</button>
+							  <button type="button" class="btn btn-warning">Warning</button>
+							  <button type="button" class="btn btn-danger">Danger</button>
+							  <button type="button" class="btn btn-link">Link</button>
+							</td>
                           </tbody>
                           <tbody>
-                            <td>Radio buttons</td>
-                            <td>Radio buttons2</td>
-                            <td>Radio buttons3</td>
+                            <td>Dropdown Button</td>
+                            <td>The dropdown button consists of a button that when clicked displays a drop-down list of mutually exclusive items.</td>
+                            <td><div class="dropdown">
+							    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+							    <span class="caret"></span></button>
+							    <ul class="dropdown-menu">
+							      <li><a href="#">HTML</a></li>
+							      <li><a href="#">CSS</a></li>
+							      <li><a href="#">JavaScript</a></li>
+							    </ul>
+							  </div>
+							  </td>
                           </tbody>
                           <tbody>
-                            <td>Radio buttons</td>
-                            <td>Radio buttons2</td>
-                            <td>Radio buttons3</td>
+                            <td>Toggles</td>
+                            <td>A toggle button allows the user to change a setting between two states. They are most effective when the on/off states are visually distinct.</td>
+                            <td>
+                            <style>
+							.switch {
+							  position: relative;
+							  display: inline-block;
+							  width: 60px;
+							  height: 34px;
+							}
+							
+							.switch input { 
+							  opacity: 0;
+							  width: 0;
+							  height: 0;
+							}
+							
+							.slider {
+							  position: absolute;
+							  cursor: pointer;
+							  top: 0;
+							  left: 0;
+							  right: 0;
+							  bottom: 0;
+							  background-color: #ccc;
+							  -webkit-transition: .4s;
+							  transition: .4s;
+							}
+							
+							.slider:before {
+							  position: absolute;
+							  content: "";
+							  height: 26px;
+							  width: 26px;
+							  left: 4px;
+							  bottom: 4px;
+							  background-color: white;
+							  -webkit-transition: .4s;
+							  transition: .4s;
+							}
+							
+							input:checked + .slider {
+							  background-color: #2196F3;
+							}
+							
+							input:focus + .slider {
+							  box-shadow: 0 0 1px #2196F3;
+							}
+							
+							input:checked + .slider:before {
+							  -webkit-transform: translateX(26px);
+							  -ms-transform: translateX(26px);
+							  transform: translateX(26px);
+							}
+							
+							/* Rounded sliders */
+							.slider.round {
+							  border-radius: 34px;
+							}
+							
+							.slider.round:before {
+							  border-radius: 50%;
+							}
+							</style>
+                            <label class="switch">
+							  <input type="checkbox" checked>
+							  <span class="slider"></span>
+							</label><br><br>
+							<label class="switch">
+							  <input type="checkbox">
+							  <span class="slider round"></span>
+							</label>							
+                            </td>
                           </tbody>
                           <tbody>
-                            <td>Radio buttons</td>
-                            <td>Radio buttons2</td>
-                            <td>Radio buttons3</td>
+                            <td>Text fields</td>
+                            <td>Text fields allow users to enter text.  It can allow either a single line or multiple lines of text.</td>
+                            <td><input type="text"  onfocus="this.value=''"  value="Enter the text"></td>
                           </tbody>
                           <tbody>
-                            <td>Radio buttons</td>
-                            <td>Radio buttons2</td>
-                            <td>Radio buttons3</td>
+                            <td>Date and time pickers</td>
+                            <td>A date picker allows users to select a date and/or time.  By using the picker, the information is consistently formatted and input into the system.</td>
+                            <td>
+                            <style>
+							* {box-sizing: border-box;}
+							ul {list-style-type: none;}
+							body {font-family: Verdana, sans-serif;}
+							
+							.month {
+							  padding: 0px 25px;
+							  width: 100%;
+							  background: #1abc9c;
+							  text-align: center;
+							}
+							
+							.month ul {
+							  margin: 0;
+							  padding: 0;
+							}
+							
+							.month ul li {
+							  color: white;
+							  font-size: 10px;
+							  text-transform: uppercase;
+							  letter-spacing: 3px;
+							}
+							
+							.month .prev {
+							  float: left;
+							  padding-top: 0px;
+							}
+							
+							.month .next {
+							  float: right;
+							  padding-top: 0px;
+							}
+							
+							.weekdays {
+							  margin: 0;
+							  padding: 0px 0;
+							  background-color: #ddd;
+							}
+							
+							.weekdays li {
+							  display: inline-block;
+							  width: 13.6%;
+							  color: #666;
+							  text-align: center;
+							}
+							
+							.days {
+							  padding: 10px 0;
+							  background: #eee;
+							  margin: 0;
+							}
+							
+							.days li {
+							  list-style-type: none;
+							  display: inline-block;
+							  width: 13.6%;
+							  text-align: center;
+							  margin-bottom: 5px;
+							  font-size:12px;
+							  color: #777;
+							}
+							
+							.days li .active {
+							  padding: 5px;
+							  background: #1abc9c;
+							  color: white !important
+							}
+							
+							/* Add media queries for smaller screens */
+							@media screen and (max-width:720px) {
+							  .weekdays li, .days li {width: 13.1%;}
+							}
+							
+							@media screen and (max-width: 420px) {
+							  .weekdays li, .days li {width: 12.5%;}
+							  .days li .active {padding: 2px;}
+							}
+							
+							@media screen and (max-width: 90px) {
+							  .weekdays li, .days li {width: 12.2%;}
+							}
+							</style>
+							</head>
+							<body>
+							
+							<h1>CSS Calendar</h1>
+							
+							<div class="month">      
+							  <ul>
+							    <li class="prev">&#10094;</li>
+							    <li class="next">&#10095;</li>
+							    <li>
+							      August<br>
+							      <span style="font-size:18px">2017</span>
+							    </li>
+							  </ul>
+							</div>
+							
+							<ul class="weekdays">
+							  <li>Mo</li>
+							  <li>Tu</li>
+							  <li>We</li>
+							  <li>Th</li>
+							  <li>Fr</li>
+							  <li>Sa</li>
+							  <li>Su</li>
+							</ul>
+							
+							<ul class="days">  
+							  <li>1</li>
+							  <li>2</li>
+							  <li>3</li>
+							  <li>4</li>
+							  <li>5</li>
+							  <li>6</li>
+							  <li>7</li>
+							  <li>8</li>
+							  <li>9</li>
+							  <li><span class="active">10</span></li>
+							  <li>11</li>
+							  <li>12</li>
+							  <li>13</li>
+							  <li>14</li>
+							  <li>15</li>
+							  <li>16</li>
+							  <li>17</li>
+							  <li>18</li>
+							  <li>19</li>
+							  <li>20</li>
+							  <li>21</li>
+							  <li>22</li>
+							  <li>23</li>
+							  <li>24</li>
+							  <li>25</li>
+							  <li>26</li>
+							  <li>27</li>
+							  <li>28</li>
+							  <li>29</li>
+							  <li>30</li>
+							  <li>31</li>
+							</ul>
+							</td>
                           </tbody>
-                          <tbody>
-                            <td>Radio buttons</td>
-                            <td>Radio buttons2</td>
-                            <td>Radio buttons3</td>
-                          </tbody>
-                          <tbody>
-                            <td>Radio buttons</td>
-                            <td>Radio buttons2</td>
-                            <td>Radio buttons3</td>
-                          </tbody>
-                          <tbody>
-                            <td>Radio buttons</td>
-                            <td>Radio buttons2</td>
-                            <td>Radio buttons3</td>
-                          </tbody>
+                          
                         </table>
                         
                       </div>
                     </div>
                   </div>
            
-
+				</table>
+                  </ul>
+                
+ <div class="bs-example">
+          <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapsetwo">Navigational Components	</a>
+                    </h4>
+                  </div>
+                  <ul>
+                   
+                  </ul>
+                  <div id="collapsetwo" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <th>Element</th>
+                            <th>Description</th>
+                            <th>Examples</th>
+                          </thead>
+                          <tbody>
+                            <td>Search Field</td>
+                            <td>A search box allows users to enter a keyword or phrase (query) and submit it to search the index with the intention of getting back the most relevant results. Typically search fields are single-line text boxes and are often accompanied by a search button.</td>
+                            <td>
+							<div class="topnav">
+							<input type="text" placeholder="Search..">
+							</div>
+							</td>
+                            </tbody>
+                            
+                          
+                        </table>
+                        
+                      </div>
+                    </div>
+                  </div>
+           
+				</table>
+                  </ul>
           <script src="js/jquery-2.2.0.min.js"></script>
           <script src="bootstrap/js/bootstrap.js"></script>
         </div>
