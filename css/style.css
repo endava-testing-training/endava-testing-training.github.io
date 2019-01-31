@@ -3,6 +3,8 @@ h1 {
 	color: #FFF;
 	border-radius: 4px;
 	margin-bottom: 30px;
+	font-family: 'Raleway', sans-serif;
+	background-color: #de411b;
 }
 
 .img-logo {
@@ -11,6 +13,212 @@ h1 {
 	margin-top: 30px;
 }
 
-.red {
-	background-color: #de411b;
+ul {
+	margin-bottom: 20px;
 }
+
+li {
+	list-style-type: disc;
+	font-size: 1.5rem;
+}
+
+a.accordion-toggle {
+		display: block;
+		padding: 10px;
+		margin: -10px;
+		text-decoration: none;
+}
+
+a.accordion-toggle:hover {
+	text-decoration: none;
+}
+
+.panel-default>.panel-heading:hover {
+	background-color: #e5e5e5;
+
+}
+
+.btn {
+    margin-bottom: 4px;
+}
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+
+.typewriter {
+	background-color: #de411b;
+	border-radius: 6px;
+
+}
+
+.typewriter h1 {
+	overflow: hidden; 
+	white-space: nowrap;
+	margin: 0 auto 40px; 
+	letter-spacing: .05em; 
+	animation: 
+	  typing 3.5s steps(40, end),
+	  blink-caret .75s step-end infinite;
+  }
+
+  .switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.switch input { 
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider {
+	background-color: #2196F3;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+  
+  /* The typing effect */
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: orange; }
+  }
+
+
+  /* CSS Calendar */
+
+  	.month {
+		padding: 0 25px;
+		width: 100%;
+		background: #1abc9c;
+		text-align: center;
+	}
+											
+	.month ul {
+		margin: 0;
+		padding: 0;
+	}
+								
+	.month ul li {
+		color: white;
+		font-size: 10px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		list-style: none;
+	}
+
+	.month .prev {
+		float: left;
+			padding-top: 0px;
+		}
+		
+	.month .next {
+		float: right;
+		padding-top: 0px;
+	}
+		
+	.weekdays {
+		margin: 0;
+		padding: 0px 0;
+		background-color: #ddd;
+	}
+		
+	.weekdays li {
+		display: inline-block;
+		width: 13.6%;
+		color: #666;
+		text-align: center;
+	}
+		
+	.days {
+		padding: 10px 0;
+		background: #eee;
+		margin: 0;
+	}
+		
+	.days li {
+		list-style-type: none;
+		display: inline-block;
+		width: 13.6%;
+		text-align: center;
+		margin-bottom: 5px;
+		font-size:12px;
+		color: #777;
+	}
+		
+	.days li .active {
+		padding: 5px;
+		background: #1abc9c;
+		color: white !important
+	}
+		
+		/* Add media queries for smaller screens */
+		@media screen and (max-width:720px) {
+			.weekdays li, .days li {width: 13.1%;}
+		}
+		
+		@media screen and (max-width: 420px) {
+			.weekdays li, .days li {width: 12.5%;}
+			.days li .active {padding: 2px;}
+		}
+		
+		@media screen and (max-width: 90px) {
+			.weekdays li, .days li {width: 12.2%;}
+		}
