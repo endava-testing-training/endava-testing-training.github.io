@@ -106,6 +106,62 @@ a.accordion-toggle:hover {
 	transition: .4s;
 }
 
+/* Paginator */
+
+	.pagination a {
+		color: black;
+		float: left;
+		padding: 4px 8px;
+		text-decoration: none;
+		transition: background-color .3s;
+	}
+	
+	.pagination a.active {
+		background-color: dodgerblue;
+		color: white;
+	}
+	
+	.pagination a:hover:not(.active) {
+		background-color: #ddd;
+	}
+
+	/* Input Range slider */
+	.slider-square {
+		-webkit-appearance: none;
+		width: 100%;
+		height: 24px;
+		background: #d3d3d3;
+		outline: none;
+		opacity: 0.7;
+		-webkit-transition: opacity .15s ease-in-out;
+		transition: opacity .15s ease-in-out;
+	}
+
+/* Breadcrumb */
+
+	ul.breadcrumb {
+		padding: 10px 16px;
+		list-style: none;
+		background-color: #eee;
+	}
+	ul.breadcrumb li {
+		display: inline;
+		font-size: 12px;
+	}
+	ul.breadcrumb li+li:before {
+		padding: 8px;
+		color: black;
+		content: "/\00a0";
+	}
+	ul.breadcrumb li a {
+		color: #0275d8;
+		text-decoration: none;
+	}
+	ul.breadcrumb li a:hover {
+		color: #01447e;
+		text-decoration: underline;
+	}
+
 input:checked + .slider {
 	background-color: #2196F3;
 }
