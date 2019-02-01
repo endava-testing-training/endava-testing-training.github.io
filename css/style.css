@@ -137,7 +137,7 @@ a.accordion-toggle:hover {
 		transition: opacity .15s ease-in-out;
 	}
 
-/*ToolTips
+/*ToolTips*/
 .tooltip {
 	position: relative;
 	display: inline-block;
@@ -176,7 +176,7 @@ a.accordion-toggle:hover {
 	visibility: visible;
 	opacity: 1;
   }
-*/
+
 /* Notification */
 .notification {
 	background-color: #555;
