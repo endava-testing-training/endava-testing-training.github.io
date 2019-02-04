@@ -141,7 +141,7 @@ a.accordion-toggle:hover {
 .tooltip {
 	position: relative;
 	display: inline-block;
-	border-bottom: 1px dotted black;
+	opacity: 1;
   }
   
   .tooltip .tooltiptext {
@@ -157,7 +157,6 @@ a.accordion-toggle:hover {
 	bottom: 125%;
 	left: 50%;
 	margin-left: -60px;
-	opacity: 0;
 	transition: opacity 0.3s;
   }
   
