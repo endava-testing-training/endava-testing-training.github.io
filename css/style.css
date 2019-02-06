@@ -273,6 +273,12 @@ input:checked + .slider:before {
 	50% { border-color: orange; }
   }
 
+  /* DropDown*/ 
+
+  .dropdown-menu>li {
+	  list-style: none;
+  }
+  
 
   /* CSS Calendar */
 
