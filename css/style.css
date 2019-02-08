@@ -360,3 +360,11 @@ input:checked + .slider:before {
 		@media screen and (max-width: 90px) {
 			.weekdays li, .days li {width: 12.2%;}
 		}
+		
+ /* CSS IntroSQL */
+	.IntroSQL h2{
+		color:#de411b;
+	 }
+	.IntroSQL hr{
+		border-top-width:3px;
+	 }
