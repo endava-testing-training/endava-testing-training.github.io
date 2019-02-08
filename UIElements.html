@@ -78,7 +78,6 @@ Apply techniques  of software testing in projects. Select the appropriate testin
 					<li><b>Informational Components:</b> tooltips, icons, progress bar, notifications, message boxes, modal windows.</li>
 					<li><b>Containers:</b> accordion.</li>
 				</ul>
-
 				<div class="panel-group" id="accordion">
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -90,185 +89,184 @@ Apply techniques  of software testing in projects. Select the appropriate testin
 						</div>
 						<div id="collapseOne" class="panel-collapse collapse in">
 							<div class="panel-body">
-								
-										<div class="table-responsive">
-											<table class="table">
-												<thead>
-													<tr>
-														<th>Element</th>
-														<th>Description</th>
-														<th>Examples</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Checkboxes</td>
-														<td>Checkboxes allow the user to select one or more options from a set. It is usually best to present
-														checkboxes in a vertical list. More than one column is acceptable as well if the list is long enough that
-														it might require scrolling or if comparison of terms might be necessary.
-														</td>
-														<td>
-														<input type="checkbox" name="element" value="Radio"> Radio Button<br>
-														<input type="checkbox" name="element" value="Dropdown" checked> Dropdown list<br>
-														</td>
-													</tr>
-												
-													<tr>
-														<td>Radio buttons</td>
-														<td>Radio buttons are used to allow users to select one item at a time.</td>
-														<td>
-															<form >
-																<input type="radio" name="gender" value="male"> Radio Button<br>
-																<input type="radio" name="gender" value="female"> Dropdown list<br>
-																<input type="radio" name="gender" value="other"> Other
-															</form>
-														</td>
-													</tr>
-													<tr>
-														<td>Dropdown lists</td>
-														<td>Dropdown lists allow users to select one item at a time, similarly to radio buttons, but are more
-															compact allowing you to save space. Consider adding text to the field, such as ‘Select one’ to help the
-															user recognize the necessary action.</td>
-														<td>
-															<div class="dropdown">
-																<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Elements
-																	<span class="caret"></span></button>
-																<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-																	<li role="presentation"><a role="menuitem" tabindex="-1" href="#">RadioButton</a></li>
-																	<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dropdown</a></li>
-																	<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Checkboxes</a></li>
-																	<li role="presentation" class="divider"></li>
-																	<li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
-																</ul>
-															</div>
-														</td>
-													</tr>
-													<tr>			
-														<td>List boxes</td>
-														<td>List boxes, like checkboxes, allow users to select a multiple items at a time,but are more compact and
-															can support a longer list of options if needed.</td>
-														<td>
-															<form action="/action_page.php" method="get">
-																<input list="elements" name="elements">
-																<datalist id="elements">
-																	<option value="RadioButton">
-																	<option value="Dropdown">
-																	<option value="Checkboxes">
-																</datalist>
-															</form>
-														</td>
-													</tr>
-													<tr>
-														<td>Buttons</td>
-														<td>A button indicates an action upon touch and is typically labeled using text, an icon, or both.</td>
-														<td>
-															<button type="button" class="btn">Basic</button>
-															<button type="button" class="btn btn-default">Default</button>
-															<button type="button" class="btn btn-primary">Primary</button>
-															<button type="button" class="btn btn-success">Success</button>
-															<button type="button" class="btn btn-info">Info</button>
-															<button type="button" class="btn btn-warning">Warning</button>
-															<button type="button" class="btn btn-danger">Danger</button>
-															<button type="button" class="btn btn-link">Link</button>
-														</td>
-													</tr>
-													<tr>
-														<td>Dropdown Button</td>
-														<td>The dropdown button consists of a button that when clicked displays a drop-down list of mutually
-															exclusive items.</td>
-														<td>
-															<div class="dropdown">
-																<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-																	<span class="caret"></span></button>
-																<ul class="dropdown-menu">
-																	<li><a href="#">HTML</a></li>
-																	<li><a href="#">CSS</a></li>
-																	<li><a href="#">JavaScript</a></li>
-																</ul>
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td>Toggles</td>
-														<td>A toggle button allows the user to change a setting between two states. They are most effective when
-															the on/off states are visually distinct.</td>
-														<td>
-								
-															<label class="switch">
-																<input type="checkbox" checked>
-																<span class="slider"></span>
-															</label><br><br>
-															<label class="switch">
-																<input type="checkbox">
-																<span class="slider round"></span>
-															</label>
-														</td>
-													</tr>
-													<tr>
-														<td>Text fields</td>
-														<td>Text fields allow users to enter text. It can allow either a single line or multiple lines of text.</td>
-														<td><input type="text" onfocus="this.value=''" value="Enter the text"></td>
-													</tr>
-													<tr>
-														<td>Date and time pickers</td>
-														<td>A date picker allows users to select a date and/or time. By using the picker, the information is
-															consistently formatted and input into the system.</td>
-														<td>
-															<div class="month">
-																<ul>
-																	<li class="prev">&#10094;</li>
-																	<li class="next">&#10095;</li>
-																	<li>
-																		August<br>
-																		<span style="font-size:18px">2017</span>
-																	</li>
-																</ul>
-															</div>
-															<ul class="weekdays">
-																<li>Mo</li>
-																<li>Tu</li>
-																<li>We</li>
-																<li>Th</li>
-																<li>Fr</li>
-																<li>Sa</li>
-																<li>Su</li>
-															</ul>
-															<ul class="days">
-																<li>1</li>
-																<li>2</li>
-																<li>3</li>
-																<li>4</li>
-																<li>5</li>
-																<li>6</li>
-																<li>7</li>
-																<li>8</li>
-																<li>9</li>
-																<li><span class="active">10</span></li>
-																<li>11</li>
-																<li>12</li>
-																<li>13</li>
-																<li>14</li>
-																<li>15</li>
-																<li>16</li>
-																<li>17</li>
-																<li>18</li>
-																<li>19</li>
-																<li>20</li>
-																<li>21</li>
-																<li>22</li>
-																<li>23</li>
-																<li>24</li>
-																<li>25</li>
-																<li>26</li>
-																<li>27</li>
-																<li>28</li>
-																<li>29</li>
-																<li>30</li>
-																<li>31</li>
-															</ul>
-														</td>
-													</tr>
-											</table>
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Element</th>
+												<th>Description</th>
+												<th>Examples</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Checkboxes</td>
+												<td>Checkboxes allow the user to select one or more options from a set. It is usually best to present
+												checkboxes in a vertical list. More than one column is acceptable as well if the list is long enough that
+												it might require scrolling or if comparison of terms might be necessary.
+												</td>
+												<td>
+												<input type="checkbox" name="element" value="Radio"> Radio Button<br>
+												<input type="checkbox" name="element" value="Dropdown" checked> Dropdown list<br>
+												</td>
+											</tr>
+										
+											<tr>
+												<td>Radio buttons</td>
+												<td>Radio buttons are used to allow users to select one item at a time.</td>
+												<td>
+													<form >
+														<input type="radio" name="gender" value="male"> Radio Button<br>
+														<input type="radio" name="gender" value="female"> Dropdown list<br>
+														<input type="radio" name="gender" value="other"> Other
+													</form>
+												</td>
+											</tr>
+											<tr>
+												<td>Dropdown lists</td>
+												<td>Dropdown lists allow users to select one item at a time, similarly to radio buttons, but are more
+													compact allowing you to save space. Consider adding text to the field, such as ‘Select one’ to help the
+													user recognize the necessary action.</td>
+												<td>
+													<div class="dropdown">
+														<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Elements
+															<span class="caret"></span></button>
+														<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+															<li role="presentation"><a role="menuitem" tabindex="-1" href="#">RadioButton</a></li>
+															<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dropdown</a></li>
+															<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Checkboxes</a></li>
+															<li role="presentation" class="divider"></li>
+															<li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+														</ul>
+													</div>
+												</td>
+											</tr>
+											<tr>			
+												<td>List boxes</td>
+												<td>List boxes, like checkboxes, allow users to select a multiple items at a time,but are more compact and
+													can support a longer list of options if needed.</td>
+												<td>
+													<form action="/action_page.php" method="get">
+														<input list="elements" name="elements">
+														<datalist id="elements">
+															<option value="RadioButton">
+															<option value="Dropdown">
+															<option value="Checkboxes">
+														</datalist>
+													</form>
+												</td>
+											</tr>
+											<tr>
+												<td>Buttons</td>
+												<td>A button indicates an action upon touch and is typically labeled using text, an icon, or both.</td>
+												<td>
+													<button type="button" class="btn">Basic</button>
+													<button type="button" class="btn btn-default">Default</button>
+													<button type="button" class="btn btn-primary">Primary</button>
+													<button type="button" class="btn btn-success">Success</button>
+													<button type="button" class="btn btn-info">Info</button>
+													<button type="button" class="btn btn-warning">Warning</button>
+													<button type="button" class="btn btn-danger">Danger</button>
+													<button type="button" class="btn btn-link">Link</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Dropdown Button</td>
+												<td>The dropdown button consists of a button that when clicked displays a drop-down list of mutually
+													exclusive items.</td>
+												<td>
+													<div class="dropdown">
+														<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+															<span class="caret"></span></button>
+														<ul class="dropdown-menu">
+															<li><a href="#">HTML</a></li>
+															<li><a href="#">CSS</a></li>
+															<li><a href="#">JavaScript</a></li>
+														</ul>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Toggles</td>
+												<td>A toggle button allows the user to change a setting between two states. They are most effective when
+													the on/off states are visually distinct.</td>
+												<td>
+						
+													<label class="switch">
+														<input type="checkbox" checked>
+														<span class="slider"></span>
+													</label><br><br>
+													<label class="switch">
+														<input type="checkbox">
+														<span class="slider round"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>Text fields</td>
+												<td>Text fields allow users to enter text. It can allow either a single line or multiple lines of text.</td>
+												<td><input type="text" onfocus="this.value=''" value="Enter the text"></td>
+											</tr>
+											<tr>
+												<td>Date and time pickers</td>
+												<td>A date picker allows users to select a date and/or time. By using the picker, the information is
+													consistently formatted and input into the system.</td>
+												<td>
+													<div class="month">
+														<ul>
+															<li class="prev">&#10094;</li>
+															<li class="next">&#10095;</li>
+															<li>
+																August<br>
+																<span style="font-size:18px">2017</span>
+															</li>
+														</ul>
+													</div>
+													<ul class="weekdays">
+														<li>Mo</li>
+														<li>Tu</li>
+														<li>We</li>
+														<li>Th</li>
+														<li>Fr</li>
+														<li>Sa</li>
+														<li>Su</li>
+													</ul>
+													<ul class="days">
+														<li>1</li>
+														<li>2</li>
+														<li>3</li>
+														<li>4</li>
+														<li>5</li>
+														<li>6</li>
+														<li>7</li>
+														<li>8</li>
+														<li>9</li>
+														<li><span class="active">10</span></li>
+														<li>11</li>
+														<li>12</li>
+														<li>13</li>
+														<li>14</li>
+														<li>15</li>
+														<li>16</li>
+														<li>17</li>
+														<li>18</li>
+														<li>19</li>
+														<li>20</li>
+														<li>21</li>
+														<li>22</li>
+														<li>23</li>
+														<li>24</li>
+														<li>25</li>
+														<li>26</li>
+														<li>27</li>
+														<li>28</li>
+														<li>29</li>
+														<li>30</li>
+														<li>31</li>
+													</ul>
+												</td>
+											</tr>
+									</table>
 
 										</div>
 									
@@ -402,107 +400,152 @@ Apply techniques  of software testing in projects. Select the appropriate testin
 						</div>
 					</div>
 					<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThird">
-										Navigational Components
-									</a>
-								</h4>
-							</div>
-							<div id="collapseThird" class="panel-collapse collapse in">
-								<div class="panel-body">
-									
-											<div class="table-responsive">
-												<table class="table">
-													<thead>
-														<tr>
-															<th>Element</th>
-															<th>Description</th>
-															<th>Examples</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td>Notifications</td>
-															<td style="width: 75%;">A notification is an update message that announces something new for the user to see. Notifications are typically used to indicate items such as, the successful completion of a task, or an error or warning message.</td>
-															<td>
-																<a href="#" class="notification">
-																	<span>Inbox</span>
-																	<span class="badge">3</span>
-																</a>	
-															</td>
-														</tr>
-														<tr>
-															<td>Progress Bars</td>
-															<td>A progress bar indicates where a user is as they advance through a series of steps in a process. Typically, progress bars are not clickable.</td>
-															<td>
-																<div id="myProgress">
-																	<div id="myBar"></div>
-																</div>
-																		
-																<br>
-																<button onclick="move()">Click Me</button> 
-																
-																<script>
-																	function move() {
-																		var elem = document.getElementById("myBar");   
-																		var width = 1;
-																		var id = setInterval(frame, 10);
-																		function frame() {
-																			if (width >= 100) 
-																			{
-																				clearInterval(id);
-																			} 
-																			else 
-																			{
-																				width++; 
-																				elem.style.width = width + '%'; 
-																			}
-																		}
-																	}
-																</script>
-															</td>
-														</tr>
-														<tr>
-															<td>ToolTips</td>
-															<td>A tooltip allows a user to see hints when they hover over an item indicating the name or purpose of the item.</td>
-															<td>
-																<div class="tooltip">Hover over me
-																	<span class="tooltiptext">Tooltip text</span>
-																</div>
-															</td>
-														</tr>
-														<tr>
-															<td>Message Boxes</td>
-															<td>A message box is a small window that provides information to users and requires them to take an action before they can move forward.</td>
-															<td>
-																
-															</td>
-														</tr>
-														<tr>
-															<td>Modal Window (pop-up)</td>
-															<td>A modal window requires users to interact with it in some way before they can return to the system.</td>
-															<td></td>
-														</tr>
-														
-													</tbody>
-												</table>
-											</div>
-										
-									
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThird">
+									Informational Components
+								</a>
+							</h4>
+						</div>
+						<div id="collapseThird" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Element</th>
+												<th>Description</th>
+												<th>Examples</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Notifications</td>
+												<td style="width: 75%;">A notification is an update message that announces something new for the user to see. Notifications are typically used to indicate items such as, the successful completion of a task, or an error or warning message.</td>
+												<td>
+													<a href="#" class="notification">
+														<span>Inbox</span>
+														<span class="badge">3</span>
+													</a>	
+												</td>
+											</tr>
+											<tr>
+												<td>Progress Bars</td>
+												<td>A progress bar indicates where a user is as they advance through a series of steps in a process. Typically, progress bars are not clickable.</td>
+												<td>
+													<div id="myProgress">
+														<div id="myBar"></div>
+													</div>
+															
+													<br>
+													<button onclick="move()">Click Me</button> 
+													
+													<script>
+														function move() {
+															var elem = document.getElementById("myBar");   
+															var width = 1;
+															var id = setInterval(frame, 10);
+															function frame() {
+																if (width >= 100) 
+																{
+																	clearInterval(id);
+																} 
+																else 
+																{
+																	width++; 
+																	elem.style.width = width + '%'; 
+																}
+															}
+														}
+													</script>
+												</td>
+											</tr>
+											<tr>
+												<td>ToolTips</td>
+												<td>A tooltip allows a user to see hints when they hover over an item indicating the name or purpose of the item.</td>
+												<td>
+													<div class="tooltip">Hover over me
+														<span class="tooltiptext">Tooltip text</span>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Message Boxes</td>
+												<td>A message box is a small window that provides information to users and requires them to take an action before they can move forward.</td>
+												<td>
+													
+												</td>
+											</tr>
+											<tr>
+												<td>Modal Window (pop-up)</td>
+												<td>A modal window requires users to interact with it in some way before they can return to the system.</td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>
+					</div>
 	
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFourth">
+								Containers
+							</a>
+						</h4>
+					</div>
+					<div id="collapseFourth" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Element</th>
+											<th>Description</th>
+											<th>Examples</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Accordion</td>
+											<td style="width: 75%;">An accordion is a vertically stacked list of items that utilizes show/ hide functionality.  When a label is clicked, it expands the section showing the content within. There can have one or more items showing at a time and may have default states that reveal one or more sections without the user clicking</td>
+											<td>
+												<button class="accordion">Section 1</button>
+												<div class="panel">
+													<p>Lorem ipsum ...</p>
+												</div>
+												<script>
+													var acc = document.getElementsByClassName("accordion");
+													var i;
+													
+													for (i = 0; i < acc.length; i++) {
+														acc[i].addEventListener("click", function() {
+														this.classList.toggle("active");
+														var panel = this.nextElementSibling;
+														if (panel.style.display === "block") {
+															panel.style.display = "none";
+														} else {
+															panel.style.display = "block";
+														}
+														});
+													}
+												</script>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
 				</div>
-
-
-				<script src="js/jquery-2.2.0.min.js"></script>
-				<script src="bootstrap/js/bootstrap.js"></script>
 			</div>
-
+			<script src="js/jquery-2.2.0.min.js"></script>
+			<script src="bootstrap/js/bootstrap.js"></script>
+		</div>
 		</main>
 	</div>
 </body>
-
 </html>
