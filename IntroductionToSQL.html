@@ -182,6 +182,7 @@
 					<code><span style="color:mediumblue">FROM</span> <em>table_name</em><br></code>
 					<code><span style="color:mediumblue">WHERE</span> <em>condition</em>; </span></code>
 					<br>
+					<br>
 					<p><i><strong>Note:</strong> The WHERE clause is not only used in SELECT statement, it is also used in UPDATE, DELETE statement, etc.!</i></p>
 					<hr>
 					<h2>WHERE Clause Example</h2>
@@ -336,16 +337,121 @@
 					<h2>ORDER BY Several Columns Example 2</h2>
 					<p>The following SQL statement selects all customers from the "Customers" table, 
 					sorted ascending by the "Country" and descending by the "CustomerName" column:</p>
-					<div class="w3-example">
 					<h3>Example</h3>
-					<code></span> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br><span style="color:"></code>
-					<code></span> <span style="color:mediumblue">ORDER</span> <span style="color:mediumblue">BY</span> Country <span style="color:mediumblue">ASC</span>, CustomerName <span style="color:mediumblue">DESC</span>; </span></code>
+					<code></span><span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br><span style="color:"></code>
+					<code></span><span style="color:mediumblue">ORDER</span> <span style="color:mediumblue">BY</span> Country <span style="color:mediumblue">ASC</span>, CustomerName <span style="color:mediumblue">DESC</span>; </span></code>
+					<hr>
+					<h2>What is a NULL Value?</h2>
+					<p>A field with a NULL value is a field with no value.</p>
+					<p>If a field in a table is optional, it is possible to insert a new record or 
+					update a record without adding a value to this field. Then, the field will be 
+					saved with a NULL value.</p>
+
+					<p><i><strong>Note:</strong> A NULL value is different from a zero value or a field that
+					contains spaces. A field with a NULL value is one that has been left blank 
+					during record creation!</i></p>
+					<hr>
+
+					<h2>How to Test for NULL Values?</h2>
+					<p>It is not possible to test for NULL values with comparison operators, such as 
+					=, &lt;, or &lt;&gt;.</p>
+					<p>We will have to use the IS NULL and IS NOT NULL operators instead.</p>
+
+					<h3>IS NULL Syntax</h3>
+				
+					<code></span><span style="color:mediumblue">SELECT</span> <em>column_names<br></em><span style="color:mediumblue">FROM</span> <em>table_name</em><br><span style="color:"></code>
+					<code></span><span style="color:mediumblue">WHERE</span> <em>column_name</em> <span style="color:mediumblue">IS</span> <span style="color:mediumblue">NULL</span>; </span></code>
+
+					<h3>IS NOT NULL Syntax</h3>
+				
+					<code></span><span style="color:mediumblue">SELECT</span> <em>column_names<br></em><span style="color:mediumblue">FROM</span> <em>table_name</em><br><span style="color:"></code>	
+					<code></span><span style="color:mediumblue">WHERE</span> <em>column_name</em> <span style="color:mediumblue">IS</span> <span style="color:mediumblue">NOT</span> <span style="color:mediumblue">NULL</span>; </span></code>	
 						
-						
-		
-		
-		
-	
+					<hr>
+
+					<h2>The IS NULL Operator</h2>
+					<p>The IS NULL operator is used to test for empty values (NULL values).</p>
+					<p>The following SQL lists all customers with a NULL value in the "Address" field:</p>
+					<h3>Example</h3>
+					<code></span><span style="color:mediumblue">SELECT</span> CustomerName, ContactName, Address<br><span style="color:mediumblue">FROM</span> Customers<br><span style="color:mediumblue">WHERE</span> Address <span style="color:"></code>
+					<code></span><span style="color:mediumblue">IS</span> <span style="color:mediumblue">NULL</span>;<span style="color:">
+					</span> </span></code>
+					<br>
+					<br>
+					<p><b><i>Tip:</b> Always use IS NULL to look for NULL values.</i></p>
+					
+					<hr>
+
+					<h2>The IS NOT NULL Operator</h2>
+					<p>The IS NOT NULL operator is used to test for non-empty values (NOT NULL 
+					values).</p>
+
+					<p>The following SQL lists all customers with a value in the "Address" field:</p>
+					<h3>Example</h3>
+					<code></span>  <span style="color:mediumblue">SELECT</span> CustomerName, ContactName, Address<br><span style="color:mediumblue">FROM</span> Customers<br><span style="color:mediumblue">WHERE</span> Address <span style="color:"></code>
+					<code></span>  <span style="color:mediumblue">IS</span> <span style="color:mediumblue">NOT</span> <span style="color:mediumblue">NULL</span>;<span style="color:">
+					</span> </span></code>
+					<hr>
+
+					<h2>The SQL UPDATE Statement</h2>
+					<p>The UPDATE statement is used to modify the existing records in a table.</p>
+
+					<h3>UPDATE Syntax</h3>
+					<code></span> <span style="color:mediumblue">UPDATE</span> <em>table_name</em><br><span style="color:"></code>
+					<code></span> <span style="color:mediumblue">SET</span> <em>column1 </em>=<em> value1</em>,<em> column2 </em>=<em> value2</em>, ...<br><span style="color:"></span></code> 
+					<code><span style="color:mediumblue">WHERE</span> <em>condition</em>; </span></code>
+					<br>
+					<br>
+					<p><i><strong>Note:</strong> Be careful when updating records in a table! Notice the WHERE clause in the 
+					UPDATE statement.
+					The WHERE clause specifies which record(s) that should be updated. If 
+					you omit the WHERE clause, all records in the table will be updated!</i></p>
+					<hr>
+
+					<h2>UPDATE Table</h2>
+					<p>The following SQL statement updates the first customer (CustomerID = 1) with a new contact person <em>and</em> 
+					a new city.</p>
+					<h3>Example</h3>
+					<p>Original Table:<p>
+					<img src="images\IntroSQL\table1_SQL.png">
+					<br>
+					<br>
+					<code></span> <span style="color:mediumblue">UPDATE</span> Customers<br><span style="color:"></code>
+					<code></span> <span style="color:mediumblue">SET</span> ContactName = <span style="color:brown">'Alfred Schmidt'</span>, City= <span style="color:brown">'Frankfurt'</span><br><span style="color:"></code>
+					<code></span> <span style="color:mediumblue">WHERE</span> CustomerID = <span style="color:">1</span>;<span style="color:"></span> </span></code>
+					<br>
+					<br>
+					<p>The selection from the "Customers" table will now look like this:</p>
+					<img src="images\IntroSQL\update_SQL.png">
+					<hr>
+
+					<h2>UPDATE Multiple Records</h2>
+					<p>It is the WHERE clause that determines how many records that will be updated.</p>
+					<p>The following SQL statement will 
+					update the contactname to "Juan" for all records where country is "Mexico":</p>
+					  <h3>Example</h3>
+					<code><span style="color:mediumblue">UPDATE</span> Customers<br></code>
+					<code><span style="color:mediumblue">SET</span> ContactName=<span style="color:brown">'Juan'</span><br></code>
+					<code><span style="color:mediumblue">WHERE</span> Country=<span style="color:brown">'Mexico'</span>;<span style="color:">
+					</span> </span></code>
+					<br>
+					<br>
+					<p>The selection from the "Customers" table will now look like this:</p>
+					<img src="images\IntroSQL\update1_SQL.png">
+					<hr>
+
+					<h2>Update Warning!</h2>
+					<p>Be careful when updating records. If you omit the WHERE clause, ALL records 
+					will be updated!</p>
+
+					  <h3>Example</h3>
+					<code><span style="color:mediumblue">UPDATE</span> Customers<br></code>
+					<code><span style="color:mediumblue">SET</span> ContactName=<span style="color:brown">'Juan'</span>;<span style="color:">
+					</span> </span></code>
+					<br>
+					<br>
+					<p>The selection from the "Customers" table will now look like this:</p>
+					<img src="images\IntroSQL\update2_SQL.png">	
 	
 	
 	
