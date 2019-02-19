@@ -452,17 +452,695 @@
 					<br>
 					<p>The selection from the "Customers" table will now look like this:</p>
 					<img src="images\IntroSQL\update2_SQL.png">	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+					<hr>
+					<h2>The SQL DELETE Statement</h2>
+					<p>The DELETE statement is used to delete existing records in a table.</p>
+
+					<h3>DELETE Syntax</h3>
+					<code></span> <span style="color:mediumblue">DELETE</span> <span style="color:mediumblue">FROM</span> <em>table_name </em><span style="color:mediumblue">WHERE</span> <em>condition</em>;<span style="color:">
+					</span> </span></code>
+					<br>
+					<br>
+					<p><i><strong>Note:</strong> Be careful when deleting records in a table! Notice the WHERE clause in the 
+					DELETE statement.
+					The WHERE clause specifies which record(s) should be deleted. If 
+					you omit the WHERE clause, all records in the table will be deleted!</i></p>
+					<hr>
+
+					<h2>SQL DELETE Example</h2>
+
+					<p>The following SQL statement deletes the customer "Alfreds Futterkiste" from 
+					the "Customers" table:</p>
+
+					<h3>Example</h3>
+					<code></span> <span style="color:mediumblue">DELETE</span> <span style="color:mediumblue">FROM</span> Customers
+					<span style="color:mediumblue">WHERE</span> CustomerName=<span style="color:brown">'Alfreds Futterkiste'</span>;<span style="color:">
+					</span> </span></code>
+					<br>
+					<br>
+					<p>The "Customers" table will now look like this:</p>
+					<img src="images\IntroSQL\delete_SQL.png">
+					<hr>
+
+					<h2>Delete All Records</h2>
+					<p>It is possible to delete all rows in a table without deleting the table. This 
+					means that the table structure, attributes, and indexes will be intact:</p>
+
+					<code><span style="color:mediumblue">DELETE</span> <span style="color:mediumblue">FROM</span> <em>table_name</em>;<span style="color:">
+					</span> </span></code>
+					<br>
+					<br>
+					<p>The following SQL statement deletes all rows in the "Customers" table, 
+					without deleting the table:</p>
+					<h3>Example</h3>
+					<code></span>  <span style="color:mediumblue">DELETE</span> <span style="color:mediumblue">FROM</span> Customers;<span style="color:">
+					</span> </span></code>
+					<hr>
+					<h2>The SQL COUNT(), AVG() and SUM() Functions</h2>
+					<p>The COUNT() function returns the number of rows that matches a specified criteria.</p>
+					<p>The AVG() function returns the average value of a numeric column.</p>
+					<p>The SUM() function returns the total sum of a numeric column.</p>
+
+					<h3>COUNT() Syntax</h3>
+					
+					<code><span style="color:mediumblue">SELECT</span> <span style="color:mediumblue">COUNT</span>(<em>column_name</em>)<br>
+					<span style="color:mediumblue">FROM</span> <em>table_name</em><br>
+					<span style="color:mediumblue">WHERE</span> <em>condition</em>; </span></code>
+
+					<h3>AVG() Syntax</h3>
+					<code><span style="color:mediumblue">SELECT</span> <span style="color:mediumblue">AVG</span>(<em>column_name</em>)<br>
+					<span style="color:mediumblue">FROM</span> <em>table_name</em><br>
+					<span style="color:mediumblue">WHERE</span> <em>condition</em>; </span></code>
+
+					<h3>SUM() Syntax</h3>
+					<code><span style="color:mediumblue">SELECT</span> <span style="color:mediumblue">SUM</span>(<em>column_name</em>)<br>
+					<span style="color:mediumblue">FROM</span> <em>table_name</em><br>
+					<span style="color:mediumblue">WHERE</span> <em>condition</em>; </span></code>
+					<br>
+					<br>
+					<p><i><strong>Note:</strong> NULL values are ignored.</i></p>
+
+					<hr>
+					
+					<h2>COUNT() Example</h2>
+					<p>The following SQL statement finds the number of products:</p>
+					<h3>Example</h3>
+					
+					<code></span>  <span style="color:mediumblue">SELECT</span> <span style="color:mediumblue">COUNT</span>(ProductID)<br><span style="color:mediumblue">FROM</span> Products;<span style="color:">
+					</span> </span></code>
+					<br>
+					<br>
+					<p>Table (example):</p>
+					<img src="images\IntroSQL\Count_AVG_SQL.png">
+					<hr>
+
+					<h2>AVG() Example</h2>
+					<p>The following SQL statement finds the average price of all products:</p>
+					
+					<h3>Example</h3>
+					
+					<code></span>  <span style="color:mediumblue">SELECT</span> <span style="color:mediumblue">AVG</span>(Price)<br><span style="color:mediumblue">FROM</span> Products;<span style="color:">
+					</span> </span></code>
+					<br>
+					<br>
+					<p>Table (example):</p>
+					<img src="images\IntroSQL\Count_AVG_SQL.png">
+		
+					<hr>
+					
+					<h2>SUM() Example</h2>
+					<p>The following SQL statement finds the sum of the "Quantity" fields 
+					in the "OrderDetails" table:</p>
+					
+					<h3>Example</h3>
+					
+					<code><span style="color:mediumblue">SELECT</span> <span style="color:mediumblue">SUM</span>(Quantity)<br><span style="color:mediumblue">FROM</span> OrderDetails; </span></code>
+					<br>
+					<br>
+					<p>Table (example):</p>
+					<img src="images\IntroSQL\SUM_SQL.png">	
+					<hr>
+
+					<h2>The SQL LIKE Operator</h2>
+					<p>The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.</p>
+					<p>There are two wildcards used in conjunction with the LIKE operator:</p>
+					<ul>
+					  <li>% - The percent sign represents zero, one, or multiple characters</li>
+					  <li>_ - The underscore represents a single character</li>
+					</ul>
+					
+					<p><i><strong>Note:</strong> MS Access uses a question mark (?) instead of the underscore (_).</i></p>
+					
+					<p>The percent sign and the underscore can also be used in combinations!</p>
+
+					<h3>LIKE Syntax</h3>
+					
+					<code><span style="color:mediumblue">SELECT</span> <em>column1, column2, ...</em><br>
+					<span style="color:mediumblue">FROM</span> <em>table_name</em><br>
+					<span style="color:mediumblue">WHERE</span> <em>columnN</em> <span style="color:mediumblue">LIKE</span> <em>pattern</em>; </span></code>
+					<br>
+					<br>
+					<p><i><strong>Tip:</strong> You can also combine any number of conditions using AND or OR operators.</i></p>
+				
+					<p>Here are some examples showing different LIKE operators with '%' and '_' wildcards:</p>
+					<img src="images\IntroSQL\like_SQL.png">	
+					<hr>
+					
+					<h2>SQL LIKE Examples</h2>
+					<img src="images\IntroSQL\likeTable_SQL.png">
+					<br>
+					<br>
+					<p>The following SQL statement selects all customers with a CustomerName starting with 
+					"a":</p>
+					
+					<h3>Example</h3>
+					
+					<code></span> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br><span style="color:">
+					</span> <span style="color:mediumblue">WHERE</span> CustomerName <span style="color:mediumblue">LIKE</span> <span style="color:brown">'a%'</span>; </span></code>
+					<br>
+					<br>	
+					<p>The following SQL statement selects all customers with a CustomerName ending with "a":</p>
+					
+					<h3>Example</h3>
+					<code></span> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br><span style="color:">
+					</span> <span style="color:mediumblue">WHERE</span> CustomerName <span style="color:mediumblue">LIKE</span> <span style="color:brown">'%a'</span>;  </span></code>
+					<br>
+					<br>
+					<p>The following SQL statement selects all customers with a CustomerName that 
+					have "or" in any position:</p>
+					
+					<h3>Example</h3>
+					
+					<code></span> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br><span style="color:">
+					</span>  <span style="color:mediumblue">WHERE</span> CustomerName <span style="color:mediumblue">LIKE</span> <span style="color:brown">'%or%'</span>;<span style="color:">
+					</span> </span></code>
+					<br>
+					<br>
+					<p>The following SQL statement selects all customers with a CustomerName that 
+					have "r" in the second position:</p>
+					
+					<h3>Example</h3>
+					<code></span> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br><span style="color:">
+					</span>  <span style="color:mediumblue">WHERE</span> CustomerName <span style="color:mediumblue">LIKE</span> <span style="color:brown">'_r%'</span>;<span style="color:">
+					</span> </span></code>
+					<br>
+					<br>
+					<p>The following SQL statement selects all customers with a CustomerName that 
+					starts with "a" and are at least 3 characters in length:</p>
+					<h3>Example</h3>
+					<code></span> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br><span style="color:">
+					</span>  <span style="color:mediumblue">WHERE</span> CustomerName <span style="color:mediumblue">LIKE</span> <span style="color:brown">'a_%_%'</span>; </span></code>
+					<br>
+					<br>
+					<p>The following SQL statement selects all customers with a ContactName that 
+					starts with "a" and ends with "o":</p>
+					<h3>Example</h3>
+					
+					<code></span> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br><span style="color:">
+					</span>  <span style="color:mediumblue">WHERE</span> ContactName <span style="color:mediumblue">LIKE</span> <span style="color:brown">'a%o'</span>; </span></code>
+					
+					<br>
+					<br>
+					<p>The following SQL statement selects all customers with a CustomerName that 
+					does 
+					NOT start with "a":</p>
+					
+					<h3>Example</h3>
+					
+					<code></span> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br><span style="color:">
+					</span>  <span style="color:mediumblue">WHERE</span> CustomerName <span style="color:mediumblue">NOT</span> <span style="color:mediumblue">LIKE</span> <span style="color:brown">'a%'</span>;<span style="color:">
+					</span> </span></code>
+					<hr>
+					<h2>The SQL IN Operator</h2>
+					<p>The IN operator allows you to specify multiple values in a WHERE clause.</p>
+					<p>The IN operator is a shorthand for multiple OR conditions.</p>
+
+					<h3>IN Syntax</h3>
+					
+					<code><span style="color:mediumblue">SELECT</span> <em>column_name(s)</em><br>
+					<span style="color:mediumblue">FROM</span> <em>table_name</em><br>
+					<span style="color:mediumblue">WHERE</span> <em>column_name</em> <span style="color:mediumblue">IN</span> (<em>value1</em>,<em> value2</em>, ...); </span></code>
+					<br>
+					<br>
+					<p>OR:</p>
+					<code><span style="color:mediumblue">SELECT</span> <em>column_name(s)</em><br>
+					<span style="color:mediumblue">FROM</span> <em>table_name</em><br>
+					<span style="color:mediumblue">WHERE</span> <em>column_name</em> <span style="color:mediumblue">IN</span> (<em><span style="color:mediumblue">SELECT</span> STATEMENT</em>); </span></code>
+					<hr>
+
+					<h2>IN Operator Examples</h2>
+					<p>The following SQL statement selects all customers that are located in "Germany", "France" and "UK":</p>
+					
+					<h3>Example</h3>
+					
+					<code></span> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br><span style="color:">
+					</span>  <span style="color:mediumblue">WHERE</span> Country <span style="color:mediumblue">IN</span> (<span style="color:brown">'Germany'</span>, <span style="color:brown">'France'</span>, <span style="color:brown">'UK'</span>);<span style="color:">
+					</span> </span></code>
+					<br>
+					<br>
+					<p>The following SQL statement selects all customers that are NOT located in "Germany", "France" or "UK":</p>
+					
+					<h3>Example</h3>
+					
+					<code></span> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br><span style="color:">
+					</span>  <span style="color:mediumblue">WHERE</span> Country <span style="color:mediumblue">NOT</span> <span style="color:mediumblue">IN</span> (<span style="color:brown">'Germany'</span>, <span style="color:brown">'France'</span>, <span style="color:brown">'UK'</span>);<span style="color:">
+					</span> </span></code>
+					<br>
+					<br>
+					<p>The following SQL statement selects all customers that are from the same 
+					countries as the suppliers:</p>
+					
+					<h3>Example</h3>
+					
+					<code></span> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br><span style="color:">
+					</span>  <span style="color:mediumblue">WHERE</span> Country <span style="color:mediumblue">IN</span> (<span style="color:mediumblue">SELECT</span> Country <span style="color:mediumblue">FROM</span> Suppliers);<span style="color:">
+					</span> </span></code>				
+					<hr>
+					<h2>The SQL BETWEEN Operator</h2>
+					<p>The BETWEEN operator selects values within a given range. The values can be numbers, text, or dates.</p>
+					<p>The BETWEEN operator is inclusive: begin and end values are included.&nbsp;</p>
+					<h3>BETWEEN Syntax</h3>
+					
+					<code><span style="color:mediumblue">SELECT</span> <em>column_name(s)</em><br>
+					<span style="color:mediumblue">FROM</span> <em>table_name</em><br>
+					<span style="color:mediumblue">WHERE</span> <em>column_name </em><span style="color:mediumblue">BETWEEN</span> <em>value1</em> <span style="color:mediumblue">AND</span> <em>value2;</em> </span></code>
+																
+					<hr>
+					<h3>Sample Table</h3>
+					<img src="images\IntroSQL\between_SQL.png">
+					<h2>BETWEEN Example</h2>
+					<p>The following SQL statement selects all products with a price BETWEEN 10 and 20:</p>
+					<h3>Example</h3>
+					
+					<code></span> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Products<br><span style="color:mediumblue">WHERE</span> Price <span style="color:mediumblue">BETWEEN</span> <span style="color:">10</span> <span style="color:mediumblue">AND</span> <span style="color:">20</span>;<span style="color:">
+					</span> </span></code>			
+					<hr>
+
+					<h2>NOT BETWEEN Example</h2>
+					<p>To display the products outside the range of the previous example, use NOT BETWEEN:</p>
+					<h3>Example</h3>
+					
+					<code></span> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Products<br><span style="color:mediumblue">WHERE</span> Price <span style="color:mediumblue">NOT</span> <span style="color:mediumblue">BETWEEN</span> <span style="color:">10</span> <span style="color:mediumblue">AND</span> <span style="color:">20</span>;<span style="color:">
+					</span> </span></code>
+				
+					<hr>
+
+					<h2>BETWEEN with IN Example</h2>
+					<p>The following SQL statement selects all products with a price BETWEEN 10 and 
+					20. In addition; do not show products with a CategoryID of 1,2, or 3:</p>
+					
+					<h3>Example</h3>
+					
+					<code></span> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Products<br><span style="color:mediumblue">WHERE</span> (Price <span style="color:mediumblue">BETWEEN</span> <span style="color:">10</span> <span style="color:mediumblue">AND</span> <span style="color:">20</span>)<br><span style="color:mediumblue">AND</span> <span style="color:mediumblue">NOT</span> CategoryID <span style="color:mediumblue">IN</span> (<span style="color:">1</span>,<span style="color:">2</span>,<span style="color:">3</span>);<span style="color:">
+					</span> </span></code>
+					
+					<hr>
+
+					<h2>BETWEEN Text Values Example</h2>
+					<p>The following SQL statement selects all products with a ProductName BETWEEN 'Carnarvon 
+					Tigers' and 'Mozzarella di Giovanni':</p>
+					
+					<h3>Example</h3>
+					
+					<code></span> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Products<br><span style="color:mediumblue">WHERE</span> ProductName <span style="color:mediumblue">BETWEEN</span> <span style="color:brown">'Carnarvon Tigers'</span> <span style="color:mediumblue">AND</span> <span style="color:brown">'Mozzarella 
+					  di Giovanni'</span><br><span style="color:mediumblue">ORDER</span> <span style="color:mediumblue">BY</span> ProductName;<span style="color:">
+					</span> </span></code>
+					
+					<hr>
+
+					<h2>NOT BETWEEN Text Values Example</h2>
+					<p>The following SQL statement selects all products with a ProductName NOT BETWEEN 'Carnarvon 
+					Tigers' and 'Mozzarella di Giovanni':</p>
+					
+					<h3>Example</h3>
+					
+					<code></span> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Products<br><span style="color:mediumblue">WHERE</span> ProductName <span style="color:mediumblue">NOT</span> <span style="color:mediumblue">BETWEEN</span> <span style="color:brown">'Carnarvon Tigers'</span> <span style="color:mediumblue">AND</span> <span style="color:brown">'Mozzarella 
+					  di Giovanni'</span><br><span style="color:mediumblue">ORDER</span> <span style="color:mediumblue">BY</span> ProductName;<span style="color:">
+					</span> </span></code>
+											
+					<hr>
+
+					<h3>Other Sample Table</h3>
+					<img src="images\IntroSQL\betweenDates_SQL.png">
+									
+					<h2>BETWEEN Dates Example</h2>
+					<p>The following SQL statement selects all orders with an OrderDate BETWEEN '01-July-1996' and 
+					'31-July-1996':</p>
+					
+					<h3>Example</h3>
+					
+					<code></span> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Orders<br><span style="color:mediumblue">WHERE</span> OrderDate <span style="color:mediumblue">BETWEEN</span> #01/<span style="color:">07</span>/1996# <span style="color:mediumblue">AND</span> #31/<span style="color:">07</span>/1996#;<span style="color:">
+					</span> </span></code>
+					<br>
+					<br>
+					<p>OR:</p>
+					
+					<h3>Example</h3>
+					
+					<code><span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Orders<br><span style="color:mediumblue">WHERE</span> OrderDate <span style="color:mediumblue">BETWEEN</span> <span style="color:brown">'1996-07-01'</span> <span style="color:mediumblue">AND</span> <span style="color:brown">'1996-07-31'</span>;<span style="color:">
+					</span> </span></code>
+					<hr>
+					<h2>SQL Aliases</h2>
+					<p>SQL aliases are used to give a table, or a column in a table, a temporary name.</p>
+					<p>Aliases are often used to make column names more readable.</p>
+					<p>An alias only exists for the duration of the query.</p>
+					<h3>Alias Column Syntax</h3>
+				
+					<code></span> <span style="color:mediumblue">SELECT</span> <em>column_name</em> <span style="color:mediumblue">AS</span> <em>alias_name</em><br><span style="color:">
+					</span> <span style="color:mediumblue">FROM</span> <em>table_name;</em> </span></code>
+
+					<h3>Alias Table Syntax</h3>
+				
+					<code></span> <span style="color:mediumblue">SELECT</span> <em>column_name(s)</em><br><span style="color:">
+					</span> <span style="color:mediumblue">FROM</span> <em>table_name </em><span style="color:mediumblue">AS</span> <em>alias_name;</em>
+					</span></code>	
+					<hr>
+					<h2>Alias for Columns Examples</h2>
+					<p>The following SQL statement creates two aliases, one for the CustomerID 
+					column and one for the CustomerName column:</p>
+					
+					<h3>Example</h3>
+					
+					<code></span> <span style="color:mediumblue">SELECT</span> CustomerID <span style="color:mediumblue">AS</span> ID, CustomerName <span style="color:mediumblue">AS</span> Customer<br><span style="color:">
+					</span> <span style="color:mediumblue">FROM</span> Customers; </span></code>
+					<br>
+					<br>
+
+					<p>The following SQL statement creates two aliases, one for the CustomerName 
+					column and one for the ContactName column. <br>
+					<strong><i>Note:</strong> It requires 
+					double quotation marks or square brackets if the alias name contains spaces:</i></p>
+					
+					<h3>Example</h3>
+					
+					<code></span> <span style="color:mediumblue">SELECT</span> CustomerName <span style="color:mediumblue">AS</span> Customer, ContactName <span style="color:mediumblue">AS</span> [Contact Person]<br><span style="color:">
+					</span> <span style="color:mediumblue">FROM</span> Customers; </span></code>
+					<br>
+					<br>
+					<p>The following SQL statement creates an alias named "Address" that combine four columns (Address, PostalCode, 
+					City and Country):</p>
+					
+					<h3>Example</h3>
+					
+					<code></span>  <span style="color:mediumblue">SELECT</span> CustomerName, Address + <span style="color:brown">', '</span> + PostalCode + <span style="color:brown">' '</span> + City + <span style="color:brown">', '</span> + Country <span style="color:">
+					</span>  <span style="color:mediumblue">AS</span> Address<br><span style="color:">
+					</span> <span style="color:mediumblue">FROM</span> Customers; </span></code>
+					<br>
+					<br>
+					<p><i><strong>Note:</strong> To get the SQL statement above to work in MySQL use the following:</i></p>
+					
+					<code><span style="color:mediumblue">SELECT</span> CustomerName, CONCAT(Address,<span style="color:brown">', '</span>,PostalCode,<span style="color:brown">', '</span>,City,<span style="color:brown">', '</span>,Country) <span style="color:mediumblue">AS</span> Address<br>
+					<span style="color:mediumblue">FROM</span> Customers; </span></code>
+					<hr>
+
+					<h2>Alias for Tables Example</h2>
+					<p>The following SQL statement selects all the orders from the customer with 
+					CustomerID=4 (Around the Horn). We use the "Customers" and "Orders" tables, and 
+					give them the table aliases of "c" and "o" respectively (Here we use 
+					aliases to make the SQL shorter):</p>
+					
+					<h3>Example</h3>
+					
+					<code></span> <span style="color:mediumblue">SELECT</span> o.OrderID, o.OrderDate, c.CustomerName<br><span style="color:mediumblue">FROM</span> Customers <span style="color:mediumblue">AS</span> c, Orders <span style="color:mediumblue">AS</span> o<br><span style="color:mediumblue">WHERE</span> c.CustomerName=<span style="color:brown">"Around the Horn"</span> <span style="color:mediumblue">AND</span> c.CustomerID=o.CustomerID;<span style="color:">
+					</span> </span></code>
+					<br>
+					<br>
+					<p>The following SQL statement is the same as above, but without aliases:</p>
+					
+					<h3>Example</h3>
+					
+					<code></span> <span style="color:mediumblue">SELECT</span> Orders.OrderID, Orders.OrderDate, Customers.CustomerName<br><span style="color:mediumblue">FROM</span> Customers, Orders<br><span style="color:mediumblue">WHERE</span> Customers.CustomerName=<span style="color:brown">"Around the Horn"</span> <span style="color:mediumblue">AND</span> Customers.CustomerID=Orders.CustomerID;<span style="color:">
+					</span> </span></code>
+					<br>
+					<br>
+
+					<p><b>Aliases can be useful when:</b></p>
+					<ul>
+					  <li>There are more than one table involved in a query</li>
+					  <li>Functions are used in the query</li>
+					  <li>Column names are big or not very readable</li>
+					  <li>Two or more columns are combined together</li>
+					</ul>
+					
+				<hr>
+				<h2>SQL JOIN</h2>
+				<p>A JOIN clause is used to combine rows from two or more tables, based on 
+				a related column between them.</p>
+				<p>Let's look at a selection from the "Orders" table:</p>
+				
+				<img src="images\IntroSQL\join_SQL.png">
+				<br>
+				<br>
+				<p>Then, look at a selection from the "Customers" table:</p>
+			
+				<img src="images\IntroSQL\join1_SQL.png">
+				<br>
+				<br>
+				<p>Notice that the "CustomerID" column in the "Orders" table refers to the 
+				"CustomerID" in the "Customers" table. The relationship between the two tables above 
+				is the "CustomerID" column.</p>
+				<p>Then, we can create the following SQL statement (that contains an INNER JOIN), 
+				that selects records that have matching values in both tables:</p>
+				<h3>Example</h3>
+			
+				<code></span> <span style="color:mediumblue">SELECT</span> Orders.OrderID, Customers.CustomerName, Orders.OrderDate<br><span style="color:mediumblue">FROM</span> Orders<br><span style="color:mediumblue">INNER</span> <span style="color:mediumblue">JOIN</span> Customers <span style="color:mediumblue">ON</span> Orders.CustomerID=Customers.CustomerID;<span style="color:">
+				</span> </span></code>
+				<br>
+				<br>
+				<p>and it will produce something like this:</p>
+				<img src="images\IntroSQL\join2_SQL.png">
+				<hr>
+
+				<h2>Different Types of SQL JOINs</h2>
+				<p>Here are the different types of the JOINs in SQL:</p>
+				<ul>
+				  <li><b>(INNER) JOIN</b>: Returns records that have matching values in both tables</li>
+				  <li><b>LEFT (OUTER) JOIN</b>: Return all records from the left table, and the matched records from the right table</li>
+				  <li><b>RIGHT (OUTER) JOIN</b>: Return all records from the right table, and the matched 
+				  records from the left table</li>
+				  <li><b>FULL (OUTER) JOIN</b>: Return all records when there is a match in either left 
+				  or right table</li>
+				</ul>
+				<img src="images\IntroSQL\join3_SQL.png">
+				<hr>
+				<h2>SQL INNER JOIN Keyword</h2>
+				<p>The INNER JOIN keyword selects records that have matching values in 
+				both tables.</p>
+
+				<h3>INNER JOIN Syntax</h3>
+				
+				<code><span style="color:mediumblue">SELECT</span> <em>column_name(s)</em><br>
+				<span style="color:mediumblue">FROM</span> <em>table1</em><br>
+				<span style="color:mediumblue">INNER</span> <span style="color:mediumblue">JOIN</span> <em>table2<br> </em><span style="color:mediumblue">ON</span> <em>table1.column_name </em>=<em> table2.column_name</em>;<span style="color:">
+				</span> </span></code>
+				<br>
+				<br>
+				<img src="images\IntroSQL\inner_join_SQL.png">
+				<hr>
+
+				<h2>SQL INNER JOIN Example</h2>
+				
+				<p>Below is a selection from the "Orders" table:</p>
+				<img src="images\IntroSQL\inner_join1_SQL.png">
+				<br>
+				<br>
+				<p>And a selection from the "Customers" table:</p>
+				<img src="images\IntroSQL\inner_join2_SQL.png">
+				<br>
+				<br>
+				<p>The following SQL statement selects all orders with customer information:</p>
+			
+				<code></span>  <span style="color:mediumblue">SELECT</span> Orders.OrderID, Customers.CustomerName<br><span style="color:mediumblue">FROM</span> Orders<br><span style="color:mediumblue">INNER</span> <span style="color:mediumblue">JOIN</span> <span style="color:">
+				</span>  Customers <span style="color:mediumblue">ON</span> Orders.CustomerID = Customers.CustomerID; </span></code>
+				<br>
+				<br>
+				<p><i><strong>Note:</strong> The INNER JOIN keyword selects all rows from both 
+				tables as long as there is a match between the columns. If there are records in the 
+				"Orders" table that do not have matches in "Customers", these orders will not 
+				be shown!</i></p>
+				<hr>
+
+				<h2>&nbsp;JOIN Three Tables</h2>
+				<p>The following SQL statement selects all orders with customer and shipper 
+				information:</p>
+			
+				<h3>Example</h3>
+				
+				<code></span>  <span style="color:mediumblue">SELECT</span> Orders.OrderID, Customers.CustomerName, Shippers.ShipperName<br><span style="color:mediumblue">FROM</span> <span style="color:">
+				</span>  ((Orders<br><span style="color:mediumblue">INNER</span> <span style="color:mediumblue">JOIN</span> Customers <span style="color:mediumblue">ON</span> Orders.CustomerID = Customers.CustomerID)<br><span style="color:">
+				</span>  <span style="color:mediumblue">INNER</span> <span style="color:mediumblue">JOIN</span> Shippers <span style="color:mediumblue">ON</span> Orders.ShipperID = Shippers.ShipperID); </span></code>
+				<hr>
+				<h2>SQL LEFT JOIN Keyword</h2>
+				<p>The LEFT JOIN keyword returns all records from the left table (table1), and the 
+				matched records from the right table (table2). The result is NULL from the right side, 
+				if there is no match.</p>
+
+				<h3>LEFT JOIN Syntax</h3>
+				
+				<code><span style="color:mediumblue">SELECT</span> <em>column_name(s)</em><br>
+				<span style="color:mediumblue">FROM</span> <em>table1</em><br>
+				<span style="color:mediumblue">LEFT</span> <span style="color:mediumblue">JOIN</span> <em>table2<br> </em><span style="color:mediumblue">ON</span> <em>table1.column_name </em>=<em> table2.column_name</em>;<span style="color:">
+				</span> </span></code>
+				<br>
+				<br>
+				<p><i><b>Note:</b> In some databases LEFT JOIN is called LEFT OUTER JOIN.</i></p>				
+				<img src="images\IntroSQL\left_join_SQL.png">				
+				<hr>
+
+				<h2>SQL LEFT JOIN Example</h2>
+				
+				<p>Below is a selection from the "Customers" table:</p>
+				<img src="images\IntroSQL\left_join1_SQL.png">
+				<br>
+				<br>
+				<p>And a selection from the "Orders" table:</p>
+				<img src="images\IntroSQL\left_join2_SQL.png">
+				<br>
+				<br>
+				<p>The following SQL statement will select all customers, and any orders they might have:</p>
+				
+				<code></span> <span style="color:mediumblue">SELECT</span> Customers.CustomerName, Orders.OrderID<br><span style="color:">
+				</span> <span style="color:mediumblue">FROM</span> Customers<br><span style="color:">
+				</span> <span style="color:mediumblue">LEFT</span> <span style="color:mediumblue">JOIN</span> Orders
+				 <span style="color:mediumblue">ON</span> Customers.CustomerID = Orders.CustomerID<br><span style="color:">
+				</span> <span style="color:mediumblue">ORDER</span> <span style="color:mediumblue">BY</span> Customers.CustomerName;<span style="color:">
+				</span> </span></code>
+				<br>
+				<br>
+				<p><i><strong>Note:</strong> The LEFT JOIN keyword returns all records from the 
+				left table (Customers), even if there are no matches in the right table 
+				(Orders).</i></p>
+				
+				<hr>
+				<h2>SQL RIGHT JOIN Keyword</h2>
+				<p>The RIGHT JOIN keyword returns all records from the right table (table2), and the matched records from the left table (table1). The result is NULL from the left side, when there is no match.</p>
+
+				<h3>LEFT JOIN Syntax</h3>
+				
+				<code><span style="color:mediumblue">SELECT</span> <em>column_name(s)</em><br>
+				<span style="color:mediumblue">FROM</span> <em>table1</em><br>
+				<span style="color:mediumblue">RIGHT</span> <span style="color:mediumblue">JOIN</span> <em>table2<br> </em><span style="color:mediumblue">ON</span> <em>table1.column_name </em>=<em> table2.column_name</em>;<span style="color:">
+				</span> </span></code>
+				<br>
+				<br>
+				<p><i><b>Note:</b> In some databases RIGHT JOIN is called RIGHT OUTER JOIN.</i></p>				
+				<img src="images\IntroSQL\right_join_SQL.png">				
+				<hr>
+
+				<h2>SQL RIGHT JOIN Example</h2>
+				
+				<p>Below is a selection from the "Orders" table:</p>
+				<img src="images\IntroSQL\left_join2_SQL.png">
+				<br>
+				<br>
+				<p>And a selection from the "Employees" table:</p>
+				<img src="images\IntroSQL\right_join1_SQL.png">
+				<br>
+				<br>
+				<p>The following SQL statement will return all employees, and any orders they might have placed:</p>
+				
+				<code></span> <span style="color:mediumblue">SELECT</span> Orders.OrderID, Employees.LastName, Employees.FirstName<br><span style="color:">
+				</span> <span style="color:mediumblue">FROM</span> Orders<br><span style="color:">
+				</span> <span style="color:mediumblue">RIGHT</span> <span style="color:mediumblue">JOIN</span> Employees
+				 <span style="color:mediumblue">ON</span> Orders.EmployeeID = Employees.EmployeeID<br><span style="color:">
+				</span> <span style="color:mediumblue">ORDER</span> <span style="color:mediumblue">BY</span> Orders.OrderID;<span style="color:">
+				</span> </span></code>
+				<br>
+				<br>
+				<p><i><strong>Note:</strong> The RIGHT JOIN keyword returns all records from the right table (Employees), even if there are no matches in the left table (Orders).</i></p>
+				<hr>
+
+				<h2>SQL FULL OUTER JOIN Keyword</h2>
+				<p>The FULL OUTER JOIN keyword return all records when there is a match in 
+				either left (table1) or right (table2) table records.</p>
+				<p><i><strong>Note:</strong> FULL OUTER JOIN can potentially return very large 
+				result-sets!</i></p>
+
+				<h3>FULL OUTER JOIN Syntax</h3>
+				<code></span> <span style="color:mediumblue">SELECT</span> <em>column_name(s)</em><br><span style="color:">
+				</span> <span style="color:mediumblue">FROM</span> <em>table1</em><br><span style="color:">
+				</span> <span style="color:mediumblue">FULL</span> <span style="color:mediumblue">OUTER</span> <span style="color:mediumblue">JOIN</span> <em>table2<br> </em><span style="color:mediumblue">ON</span> <em>table1.column_name </em>=<em> table2.column_name</em>; </span></code>
+				<br>
+				<br>
+				<img src="images\IntroSQL\full_join_SQL.png">
+				<hr>
+
+				<h2>SQL FULL OUTER JOIN Example</h2>
+				
+				<p>Below is a selection from the "Customers" table:</p>
+				<img src="images\IntroSQL\inner_join2_SQL.png">
+				<br>
+				<br>
+				<p>And a selection from the "Orders" table:</p>
+				<img src="images\IntroSQL\left_join2_SQL.png">
+				<br>
+				<br>
+				<p>The following SQL statement selects all customers, and all orders:</p>
+				
+				<code><span style="color:mediumblue">SELECT</span> Customers.CustomerName, Orders.OrderID<br>
+				<span style="color:mediumblue">FROM</span> Customers<br>
+				<span style="color:mediumblue">FULL</span> <span style="color:mediumblue">OUTER</span> <span style="color:mediumblue">JOIN</span> Orders
+				<span style="color:mediumblue">ON</span> Customers.CustomerID=Orders.CustomerID<br>
+				ORDER <span style="color:mediumblue">BY</span> Customers.CustomerName;<span style="color:">
+				</span> </span></code>
+				<br>
+				<br>
+				<p>A selection from the result set may look like this:</p>
+				<img src="images\IntroSQL\full_join1_SQL.png">
+				<hr>
+				<h2>SQL Comments</h2>
+				<h3>Comments are used to explain sections of SQL statements, or to prevent execution 
+				of SQL statements.</h3>
+				<br>
+				
+				<p><i><strong>Note: The examples in this chapter will not work in Firefox and 
+				Microsoft Edge!</strong></i></p>
+				<p><i>Comments are not supported in Microsoft Access databases. Firefox and Microsoft Edge are using Microsoft Access database in our examples.</i></p>
+				
+
+				<hr>
+				<h2>Single Line Comments</h2>
+				<p>Single line comments start with --.</p>
+				<p>Any text between -- and the end of the line will be ignored (will not be executed).</p>
+				<h3>Examples:</h3>
+				<p>The following example uses a single-line comment as an explanation:</p>
+				
+				<code></span><span style="color:green">--Select all:<br></span>
+				<span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers;<span style="color:">
+				</span> </span></code>
+				<br>
+				<br>
+				<p>The following example uses a single-line comment to ignore the end of a line:</p>
+				
+				<code><span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers <span style="color:green">-- WHERE City='Berlin';
+				 </span></span></code>
+				<br>
+				<br>
+				<p>The following example uses a single-line comment to ignore a statement:</p>
+				
+				<code></span><span style="color:green">--SELECT * FROM Customers;<br></span>
+				<span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Products;<span style="color:">
+				</span> </span></code>
+				<hr>
+
+				<h2>Multi-line Comments</h2>
+				<p>Multi-line comments start with /* and end with */.</p>
+				<p>Any text between /* and */ will be ignored.</p>
+
+				
+				<h3>Examples:</h3>
+				<p>The following example uses a multi-line comment as an explanation:</p>
+				</span><span style="color:green">/*Select all the columns<br>
+				of all the records<br>
+				in the Customers table:*/</span><br>
+				<code><span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers;<span style="color:">
+				</span> </span></code>
+				<br>
+				<br>
+				<p>The following example uses a multi-line comment to ignore many statements:</p>
+
+				<code></span><span style="color:green">/*SELECT * FROM Customers;<br>
+				SELECT * FROM Products;<br>
+				SELECT * FROM Orders;<br>
+				SELECT * FROM Categories;*/</span><br>
+				<span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Suppliers;<span style="color:">
+				</span> </span></code>
+				<br>
+				<br>
+				<p>To ignore just a part of a statement, also use the /* */ comment.</p>
+				<p>The following example uses a comment to ignore part of a line:</p>
+			
+				<code><span style="color:mediumblue">SELECT</span> CustomerName, <span style="color:green">/*City,*/</span> Country <span style="color:mediumblue">FROM</span> Customers;<span style="color:">
+				</span> </span></code>
+				<br>
+				<br>
+				<p>The following example uses a comment to ignore part of a statement:</p>
+				<code><span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers <span style="color:mediumblue">WHERE</span> (CustomerName <span style="color:mediumblue">LIKE</span> <span style="color:brown">'L%'</span><br>
+				<span style="color:mediumblue">OR</span> CustomerName <span style="color:mediumblue">LIKE</span> <span style="color:brown">'R%'</span> <span style="color:green">/*OR CustomerName LIKE 'S%'<br>
+				OR CustomerName LIKE 'T%'*/</span> <span style="color:mediumblue">OR</span> CustomerName <span style="color:mediumblue">LIKE</span> <span style="color:brown">'W%'</span>)<br>
+				<span style="color:mediumblue">AND</span> Country=<span style="color:brown">'USA'</span><br>
+				<span style="color:mediumblue">ORDER</span> <span style="color:mediumblue">BY</span> CustomerName; </span></code>
+					
 	
 	
 	
