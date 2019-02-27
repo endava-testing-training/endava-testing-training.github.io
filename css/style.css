@@ -372,6 +372,9 @@ input:checked + .slider:before {
 	.IntroSQL hr{
 		border-top-width:3px;
 	 }
+	 .ui-state-active {
+		 background: #333;
+	 }
 
 
 
