@@ -372,3 +372,72 @@ input:checked + .slider:before {
 	.IntroSQL hr{
 		border-top-width:3px;
 	 }
+	 .ui-state-active {
+		 background: #333;
+	 }
+
+
+
+
+
+	 /* Navigation */
+
+	 /*!
+ * Start Bootstrap - One Page Wonder v5.0.3 (https://startbootstrap.com/template-overviews/one-page-wonder)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/master/LICENSE)
+ */
+
+ .navbar-nav {
+	float: right;
+}
+
+.navbar-custom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+	background-color: rgb(72, 83, 91);
+	border-radius: 0;
+
+}
+
+.navbar-custom .navbar-brand {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
+.navbar-custom .navbar-nav li{
+	list-style: none;
+	padding-top: 15px;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.5);
+	padding: 28px 9px;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link:hover,
+.navbar-custom .navbar-nav .nav-item .nav-link:focus {
+	color: rgba(255, 255, 255, 0.75);
+	text-decoration: none;
+}
+
+#navbarResponsive a {
+	font-size: 1.8rem !important;   
+	color: rgb(219, 219, 219); 
+}
+
+#icono {
+	height: 42px;
+	padding: 0;
+	margin: 0;
+}
+
+#anchorico {
+	padding:0 !important;
+}
+

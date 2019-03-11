@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="X-UI-Compatible" content="IE=edge">
+    <title>RSD-Endava - Testing Training</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <!-- start body -->
+    <div class="container">
+        <!-- start container -->
+        <div class="row">
+
+            <header class="site-header" role="banner">
+
+                <div class="wrapper">
+
+                    <!--<a class="site-title" rel="author" href="/">Endava - Testing Training</a>-->
+
+                    <nav class="site-nav">
+
+                        <div class="trigger">
+                            <!--<a class="page-link" href="/about/">¿Endava - Testing Training?</a>-->
+                            <!--<a class="page-link" href="/cursos/">Endava Current training - Testing Training</a>-->
+                            <!--<a class="page-link" href="/faq/">Endava - Testing Training FAQ</a>-->
+                            <!--<a class="page-link" href="/"></a>-->
+                        </div>
+                    </nav>
+
+                </div>
+
+            </header>
+        </div>
+
+        <main class="page-content" aria-label="Content">
+            <div class="wrapper">
+                <div class="home IntroERD">
+			
+                    <img src="https://www.endava.com/-/media/EndavaDigital/Endava/Images/MetaDataImages/preview-image.ashx"
+                        alt="icono" class="img-responsive center-block img-logo" />
+                    <div class="typewriter rounded">
+                        <h1>Introduction to Entity Relationship Diagram (ERD)</h1>
+                    </div>
+                    <h3>
+                        <i>An entity relationship diagram (ERD), also known as an entity relationship model, is a graphical representation of an 
+						information system that depicts the relationships among people, objects, places, concepts or events within that system. An ERD is a data modeling echnique 
+						that can help define business processes and be used as the foundation for a relational database.</i>
+                    </h3>
+                    <hr>
+					
+					
+					
+				<div id="accordion">
+				  <h3>Data Modeling</h3>
+				  <div>
+					<p>
+                        Data modeling is a technique to document a software system using diagrams and symbols. It is used to represent communication of data.
+						<br>
+						The highest level of abstraction for the data model is called the Entity Relationship Diagram (ERD). It is a graphical representation of data requirements for a database.
+                    </p>
+					
+				  </div>
+				  <h3>Entity Relationship Diagram</h3>
+				  <div>
+					<p>
+                        The main value of carefully constructing an ERD is that it can readily be converted into a database structure.
+						<br>
+						There are three components in ERD.
+                    </p>
+					<ul>
+					<li>Entities: Number of tables you need for your database.</li>
+					<li>Attributes: Information such as property, facts you need to describe each table.</li>
+					<li>Relationships: How tables are linked together.</li>
+					</ul>
+					
+				  </div>
+				  <h3>Entity</h3>
+				  <div>
+					<p>Entities are the basic objects of ERDs. These are the tables of your database. Entity are nouns and the types usually fall into five classes. Concepts, 
+					location, roles, events or things. For example: students, courses, books, campus, employees, payment, projects. Specific example of an entity is called an instance. 
+					Each isntance becomes a record or a row in a table. For example, the student John Smith is a record in a table called students.</p>
+					
+				  </div>
+				  <h3>Relationships</h3>
+				  <div>
+					<p>Relationships are the associations between the entities. Verbs often describe relationships between entities. 
+					We will use Crow's Foot Symbols to represent the relationships. Three types of relationships are discussed in this lab. 
+					If you read or hear cardinality ratios, it also refers to types of relationships.</p>
+					<br>
+					<br>
+					<img src="images\IntroERD\Relationships.png">
+					<br>
+					<br>
+					<h3>One to One Relationship (1:1)</h3>
+					<p>
+                        A single entity instance in one entity class is related to a single entity instance in another entity class.
+						<br>
+						For example:
+                    </p>
+					<ul>
+					<li>Each student fills one seat and one seat is assigned to only one student.</li>
+					<li>Each professor has one office space.</li>
+					</ul>
+					
+					<h3>One to Many Relationship (1:M)</h3>
+					<p>
+                        A single entity instance in one entity class (parent) is related to multiple entity instances in another entity class (child)
+						<br>
+						For example:
+                    </p>
+					<ul>
+					<li>One instructor can teach many courses, but one course can only be taught by one instructor.</li>
+					<li>One instructor may teach many students in one class, but all the students have one instructor for that class.</li>
+					</ul>
+					
+					<h3>Many to Many Relationship (M:M)</h3>
+					<p>
+                        Each entity instance in one entity class is related to multiple entity instances in another entity class; and vice versa.
+						<br>
+						For example:
+                    </p>
+					<ul>
+					<li>Each student can take many classes, and each class can be taken by many students.</li>
+					<li>Each consumer can buy many products, and each product can be bought by many consumers.</li>
+					</ul>
+					<p>
+					The detailed Crow's Foot Relationship symbols can be found here. Crow's Foot Relationship Symbols
+					<br>
+					Many to many relationships are difficult to represent. We need to decompose a many to many (M:M) relationship into two one-to-many (1:M) relationships.
+					</p>
+					</div>
+					<h3>Attributes</h3>
+				  <div>
+					<p>Attributes are facts or description of entities. They are also often nouns and become the columns of the table. For example, for entity student, 
+					the attributes can be first name, last name, email, address and phone numbers.</p>
+					<h3>Primary Key</h3>
+					<p>Primary Key* or identifier is an attribute or a set of attributes that uniquely identifies an instance of the entity. For example, for a student entity, 
+					student number is the primary key since no two students have the same student number. We can have only one primary key in a table. It identify uniquely every row and it cannot be null.</P>
+					<h3>Foreign key</h3>
+					<p>A foreign key+ (sometimes called a referencing key) is a key used to link two tables together. Typically you take the primary key field from one table 
+					and insert it into the other table where it becomes a foreign key (it remains a primary key in the original table). We can have more than one foreign key in a table.</P>
+					
+				  </div>
+				  	<h3>An example</h3>
+				  <div>
+					<p>The following document is a quick guide for the Crow's foot ERD symbol guide.</p>
+					<br>
+					<br>
+					<img src="images\IntroERD\modelExample.png">
+					<br>
+					<br>
+				  </div>
+					
+				  </div>
+				  
+				  
+				</div>
+				</div>
+			</div>
+				<br>
+				<br>
+	</div>
+	
+	<script src="js/jquery-ui.min.js"></script>
+	
+	<!-- Accordion -->
+	<script>
+	$("#accordion").accordion({
+		active: false,
+		collapsible: false,
+		expandible: true,
+		heightStyle: 'content'
+	});
+	</script>
+</body>
+
+
+
+</html>
