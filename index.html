@@ -25,36 +25,40 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
+    <!-- Menu -->
+    <link rel="stylesheet" href="css/menu.css">
+
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-        <div class="container">
-            <a class="navbar-brand" id="anchorico" href="#">
-                    <img src="images/logo-endava-modified-white.png" alt="icono" id="icono" class="img-responsive center-block img-logo">
-            </a>
-
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link myclass" href="#">Who we are</a>
+    <nav>
+        <div id='cssmenu'>
+            <ul>
+                <li class='active'><a href='index.html'><span>Home</span></a></li>   
+                <li class='has-sub'><a href='#'><span>Recommended sites</span></a>
+                    <ul>
+                        <li><a href='https://www.ministryoftesting.com/' target="_blank"><span>Ministry of Testing</span></a></li>
+                        <li class='last'><a href='https://www.istqb.org' target="_blank"><span>ISTQB Certifications</span></a></li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Our success stories</a>
+                <li class='has-sub'><a href='#'><span>Useful links</span></a>
+                    <ul>
+                        <li><a href='https://www.youtube.com/watch?v=YhGaUh8R7II' target="_blank"><span>About Scrum</span></a></li>
+                        <li class='last'><a href='https://www.youtube.com/watch?v=V5LaKpjcgKQ' target="_blank"><span>12 Agile Principles</span></a></li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Useful links</a>
+                <li class=''><a href='sucstories.html'><span>Our success stories</span></a></li>
+                <li class=''><a href='aboutus.html'><span>About us</span></a></li>
+                <li class='has-sub last'><a href='#'><span>Contact</span></a>
+                    <ul>
+                        <li><a href='https://goo.gl/97oRXH' target="_blank"><span>MS Teams</span></a></li>
+                        <li><a href='https://goo.gl/NoCM4J' target="_blank"><span>Confluence</span></a></li>
+                        <li class='last'><a href='https://dev.azure.com/GiselaVivas/Testing%20Management' target="_blank"><span>Our Board</span></a></li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Recommended sites</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact us
-                    </a>
-                </li>
-                </ul>
-            </div>
+                <a href='index.html'><img class="endavalogo" src="images/logo-endava-modified-white.png"></a>
+            </ul>
         </div>
     </nav>
 
@@ -144,26 +148,26 @@
 
                         <li>
                             <strong>
-                                <a href="https://endava-testing-training.github.io/TestGuide.html" target=_blank>Testing Checklists</a>
+                                <a href="TestGuide.html">Testing Checklists</a>
                             </strong>
 
                         </li>
                         <li>
                             <strong>
-                                <a href="https://endava-testing-training.github.io/UIElements.html" target=_blank>Elements of User
+                                <a href="UIElements.html">Elements of User
                                     Interface</a>
                             </strong>
 
                         </li>
                         <li>
                             <strong>
-                                    <a href="https://endava-testing-training.github.io/IntroductionToSQL.html" target=_blank>Introduction to SQL</a>
+                                    <a href="IntroductionToSQL.html">Introduction to SQL</a>
                                 </strong>
             
                         </li>
 						<li>
                             <strong>
-                                    <a href="https://endava-testing-training.github.io/IntroductionToERD.html" target=_blank>Introduction to ERD</a>
+                                    <a href="IntroductionToERD.html">Introduction to ERD</a>
                                 </strong>
             
                         </li>
@@ -245,23 +249,6 @@
                             </strong>
                         </li>
                         </ul>
-
-                        <hr />
-                        <h2 id="links-utils">Useful links</h1>
-                           <ul>
-                                <li>
-                                    <strong>Agile: </strong>Look at <a href="https://www.youtube.com/watch?v=V5LaKpjcgKQ" target=_blank>12
-                                        Agile principles</a>,
-                                    and also, What is <a href="https://www.youtube.com/watch?v=YhGaUh8R7II" target=_blank>SCRUM</a>.
-                                </li>
-                                <li>
-                                    <strong>Data Base</strong>: <a href="https://mariadb.com/kb/es/basic-sql-statements/" target=_blank>References</a>
-                                    about what are the pre-existing commands and how we can write it to interact with the
-                                    SQL data base. You cant test it on
-                                    <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all" target=_blank>W3Schools</a>!
-                                </li>
-                            </ul>
-
                     </div>
 
                 </div>
@@ -271,34 +258,6 @@
             <hr />
             <footer class="site-footer h-card">
                 <data class="u-url" href="/"></data>
-
-                <div class="wrapper">
-
-                    <h2 class="footer-heading">RSD-Testing Training</h2>
-
-                    <div class="footer-col-wrapper">
-
-                        <div class="footer-col footer-col-1">
-                            <ul class="contact-list">
-                                <li><a class="u-email" href="https://confluence.endava.com/display/TD/RSD+Testing+Management" target=_blank>RSD-Testing
-                                        Management - Confluence </a></li>
-                                <li><a class="u-email" href="mailto:4de3de55.endava.onmicrosoft.com@emea.teams.ms" target=_blank>RSD-Testing
-                                        Management - MS Group Mail</a></li>
-                                <li>
-                                    <a href="https://github.com/endava-testing-training" target=_blank>RSD-Testing Training - GitHub</a>
-                                </li>
-                                <li>
-                                    <a href="https://teams.microsoft.com/l/channel/19%3adba5828dc8b945e4b328475b5a775f0b%40thread.skype/General?groupId=5d8f96c2-376d-4cb2-85ee-0d7f86ab16d5&tenantId=0b3fc178-b730-4e8b-9843-e81259237b77" target=_blank>RSD-Test
-                                        Management community in Teams </a>
-                                </li>
-                            </ul>
-                            <hr />
-                        </div>
-
-                    </div>
-
-                </div>
-
             </footer>
 
         </div>
