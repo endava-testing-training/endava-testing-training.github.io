@@ -442,3 +442,11 @@ input:checked + .slider:before {
 	padding:0 !important;
 }
 
+.signature {
+	text-align: right; 
+	padding-top: 48px;
+}
+
+.text_only p {
+	margin-left: 10px;
+}
