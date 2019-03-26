@@ -448,6 +448,14 @@ input:checked + .slider:before {
 	padding:0 !important;
 }
 
+.signature {
+	text-align: right; 
+	padding-top: 48px;
+}
+
+.text_only p {
+	margin-left: 10px;
+}
 
 .footer {
 	padding-bottom: 10px;
@@ -458,15 +466,11 @@ input:checked + .slider:before {
     padding-left: 14px;
     color: #666;
 }
-
 .footer .social a {
     font-size: 25px;
     margin: 3px;
     color: #b8b8b8;
 }
-
 .footer .social a:hover {
 	opacity: .6;
 }
-
-
