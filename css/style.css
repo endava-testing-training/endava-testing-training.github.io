@@ -39,10 +39,6 @@ a.accordion-toggle:hover {
 	text-decoration: none;
 }
 
-i {
-font-family: fontawesome !important;
-}
-
 .panel-default>.panel-heading:hover {
 	background-color: #e5e5e5;
 
