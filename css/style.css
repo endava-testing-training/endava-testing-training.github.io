@@ -1,3 +1,5 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
 h1 {
 	padding: 8px 10px;
 	color: #FFF;
@@ -35,6 +37,10 @@ a.accordion-toggle {
 
 a.accordion-toggle:hover {
 	text-decoration: none;
+}
+
+i {
+font-family: fontawesome !important;
 }
 
 .panel-default>.panel-heading:hover {
@@ -449,4 +455,22 @@ input:checked + .slider:before {
 
 .text_only p {
 	margin-left: 10px;
+}
+
+.footer {
+	padding-bottom: 10px;
+
+}
+.footer .copyright {
+    padding-top: 27px;
+    padding-left: 14px;
+    color: #666;
+}
+.footer .social a {
+    font-size: 25px;
+    margin: 3px;
+    color: #b8b8b8;
+}
+.footer .social a:hover {
+	opacity: .6;
 }
