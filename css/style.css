@@ -67,7 +67,6 @@ a.accordion-toggle:hover {
 	font-weight: 900;
 	font-size: 18px;
 	text-transform: uppercase;
-
 }
 
 .typewriter h2:before {
@@ -77,7 +76,6 @@ a.accordion-toggle:hover {
 	margin-bottom: 20px;
 	height: 5px;
 	background-color: #de411b;
-
 }
 
 .typewriter h1 {
@@ -88,9 +86,9 @@ a.accordion-toggle:hover {
 	letter-spacing: -.02em;
 	padding: 0;
 	text-transform: uppercase;
-	white-space: pre-line;
-	animation: 
-	  typing 0.5s steps(40, end),
+  white-space: nowrap;
+  animation: 
+	  typing .5s steps(200, end),
 	  blink-caret .75s step-end infinite;
   }
 
