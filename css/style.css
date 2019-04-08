@@ -5,7 +5,7 @@
 
 h1 {
 	padding: 8px 10px;
-	color: #000;
+  color: #de411b;
 	border-radius: 4px;
 	margin-bottom: 30px;
 	font-family: 'endava-font', sans-serif;
@@ -82,11 +82,11 @@ a.accordion-toggle:hover {
 	overflow: hidden; 
 	white-space: nowrap;
 	margin: 0 auto 40px;
-	font-size: 4.4em;
+	font-size: 4em;
 	letter-spacing: -.02em;
 	padding: 0;
 	text-transform: uppercase;
-  white-space: nowrap;
+	white-space: nowrap;
   animation: 
 	  typing .5s steps(200, end),
 	  blink-caret .75s step-end infinite;
@@ -286,8 +286,8 @@ input:checked + .slider:before {
   
   /* The typing effect */
   @keyframes typing {
-	from { width: 0 }
-	to { width: 100% }
+	from { width: 0;opacity: 0; }
+	to { width: 100%;opacity: 1; }
   }
   
   /* The typewriter cursor effect */
@@ -396,16 +396,8 @@ input:checked + .slider:before {
 	 }
 
 
-
-
-
 	 /* Navigation */
 
-	 /*!
- * Start Bootstrap - One Page Wonder v5.0.3 (https://startbootstrap.com/template-overviews/one-page-wonder)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/master/LICENSE)
- */
 
  .navbar-nav {
 	float: right;
@@ -526,3 +518,22 @@ input:checked + .slider:before {
 	width: 200px;
 	height: 200px;
 }
+
+.ui-accordion .ui-accordion-header {
+	margin: 4px 0 0 0;
+	padding: .7em .5em .5em .7em;
+	font-size: 1.2em;
+	outline: none;
+}
+.ui-state-active {
+	background:#de411b;
+}
+
+.ui-state-active,
+ .ui-widget-content .ui-state-active,
+ .ui-widget-header .ui-state-active,
+ a.ui-button:active,
+ .ui-button:active,
+ .ui-button.ui-state-active:hover {
+	border: 1px solid #c5c5c5;
+	}
