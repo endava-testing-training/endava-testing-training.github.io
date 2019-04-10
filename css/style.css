@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "endava-font";
-	src: url("../external/fonts/robotocondensed-bold-webfont.woff2") format('woff');
+	src: url("../external/fonts/robotocondensed-bold-webfont.woff") format('woff');
 }
 
 h1 {
