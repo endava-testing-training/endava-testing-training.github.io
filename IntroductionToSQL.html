@@ -38,14 +38,18 @@
 				<li class=''><a href='index.html'><span>Home</span></a></li>
 				<li class='has-sub'><a href='#'><span>Recommended sites</span></a>
 					<ul>
-						<li><a href='https://www.ministryoftesting.com/' target="_blank"><span>Ministry of Testing</span></a></li>
-						<li class='last'><a href='https://www.istqb.org' target="_blank"><span>ISTQB Certifications</span></a></li>
+						<li><a href='https://www.ministryoftesting.com/' target="_blank"><span>Ministry of
+									Testing</span></a></li>
+						<li class='last'><a href='https://www.istqb.org' target="_blank"><span>ISTQB
+									Certifications</span></a></li>
 					</ul>
 				</li>
 				<li class='has-sub'><a href='#'><span>Useful links</span></a>
 					<ul>
-						<li><a href='https://www.youtube.com/watch?v=YhGaUh8R7II' target="_blank"><span>About Scrum</span></a></li>
-						<li class='last'><a href='https://www.youtube.com/watch?v=V5LaKpjcgKQ' target="_blank"><span>12 Agile
+						<li><a href='https://www.youtube.com/watch?v=YhGaUh8R7II' target="_blank"><span>About
+									Scrum</span></a></li>
+						<li class='last'><a href='https://www.youtube.com/watch?v=V5LaKpjcgKQ' target="_blank"><span>12
+									Agile
 									Principles</span></a></li>
 					</ul>
 				</li>
@@ -55,7 +59,8 @@
 					<ul>
 						<li><a href='https://goo.gl/97oRXH' target="_blank"><span>MS Teams</span></a></li>
 						<li><a href='https://goo.gl/NoCM4J' target="_blank"><span>Confluence</span></a></li>
-						<li class='last'><a href='https://dev.azure.com/GiselaVivas/Testing%20Management' target="_blank"><span>Our
+						<li class='last'><a href='https://dev.azure.com/GiselaVivas/Testing%20Management'
+								target="_blank"><span>Our
 									Board</span></a></li>
 					</ul>
 				</li>
@@ -108,7 +113,8 @@
 							<ul>
 								<li>SQL stands for Structured Query Language.</li>
 								<li>SQL lets you access and manipulate databases.</li>
-								<li>SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the
+								<li>SQL became a standard of the American National Standards Institute (ANSI) in 1986,
+									and of the
 									International Organization for Standardization (ISO) in 1987.</li>
 							</ul>
 							<hr>
@@ -130,9 +136,11 @@
 
 							<h2>RDBMS</h2>
 							<p>RDBMS stands for Relational Database Management System.</p>
-							<p>RDBMS is the basis for SQL, and for all modern database systems such as MS SQL Server, IBM DB2, Oracle,
+							<p>RDBMS is the basis for SQL, and for all modern database systems such as MS SQL Server,
+								IBM DB2, Oracle,
 								MySQL, and Microsoft Access.</p>
-							<p>The data in RDBMS is stored in database objects called tables. A table is a collection of related data
+							<p>The data in RDBMS is stored in database objects called tables. A table is a collection of
+								related data
 								entries and it consists of columns and rows.</p>
 							<p>Look at the "Customers" table:</p>
 
@@ -141,13 +149,17 @@
 							<code><span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers;</code>
 							<br>
 							<br>
-							<p>Every table is broken up into smaller entities called fields. For example, the fields in the Customers
+							<p>Every table is broken up into smaller entities called fields. For example, the fields in
+								the Customers
 								table consist of CustomerID, CustomerName, ContactName, Address,
-								City, PostalCode and Country. A field is a column in a table that is designed to maintain
+								City, PostalCode and Country. A field is a column in a table that is designed to
+								maintain
 								specific information about every record in the table.</p>
-							<p>A record, also called a row, is each individual entry that exists in a table. A record is a horizontal
+							<p>A record, also called a row, is each individual entry that exists in a table. A record is
+								a horizontal
 								entity in a table.</p>
-							<p>A column is a vertical entity in a table that contains all information associated with a specific field
+							<p>A column is a vertical entity in a table that contains all information associated with a
+								specific field
 								in a table.</p>
 
 						</div>
@@ -156,13 +168,16 @@
 						<h3>SQL Syntax</h3>
 						<div>
 							<h2>Database Tables</h2>
-							<p>A database most often contains one or more tables. Each table is identified by a name (e.g. "Customers"
+							<p>A database most often contains one or more tables. Each table is identified by a name
+								(e.g. "Customers"
 								or "Orders"). Tables contain records (rows) with data.</p>
-							<p>In this tutorial we will use the well-known Northwind sample database (included in MS Access and MS SQL
+							<p>In this tutorial we will use the well-known Northwind sample database (included in MS
+								Access and MS SQL
 								Server).</p>
 							<p>Below is a selection from the "Customers" table:</p>
 							<img src="images\IntroSQL\table1_SQL.png">
-							<p>The table above contains five records (one for each customer) and seven columns (CustomerID,
+							<p>The table above contains five records (one for each customer) and seven columns
+								(CustomerID,
 								CustomerName, ContactName, Address, City, PostalCode, and Country).</p>
 							<hr>
 							<h2>Keep in Mind That...</h2>
@@ -176,7 +191,8 @@
 
 							<h2>Semicolon after SQL Statements?</h2>
 							<p>Some database systems require a semicolon at the end of each SQL statement.</p>
-							<p>Semicolon is the standard way to separate each SQL statement in database systems that allow more than
+							<p>Semicolon is the standard way to separate each SQL statement in database systems that
+								allow more than
 								one SQL statement to be executed in the same call to the server.</p>
 							<p>In this tutorial, we will use semicolon at the end of each SQL statement.</p>
 							<hr>
@@ -210,7 +226,8 @@
 					</code>
 							<br>
 							<br>
-							<p>Here, column1, column2, ... are the field names of the table you want to select data from. If you want
+							<p>Here, column1, column2, ... are the field names of the table you want to select data
+								from. If you want
 								to select all the fields available in the table, use the following syntax:</p>
 							<code><span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> <em>table_name</em>; </code>
 							<hr>
@@ -233,18 +250,21 @@
 						<div>
 							<h2>The SQL WHERE Clause</h2>
 							<p>The WHERE clause is used to filter records.</p>
-							<p>The WHERE clause is used to extract only those records that fulfill a specified condition.</p>
+							<p>The WHERE clause is used to extract only those records that fulfill a specified
+								condition.</p>
 							<h3>WHERE Syntax</h3>
 							<code><span style="color:mediumblue">SELECT</span> <em>column1</em>,<em> column2, ...</em><br>
 					<span style="color:mediumblue">FROM</span> <em>table_name</em><br>
 					<span style="color:mediumblue">WHERE</span> <em>condition</em>; </code>
 							<br>
 							<br>
-							<p><i><strong>Note:</strong> The WHERE clause is not only used in SELECT statement, it is also used in
+							<p><i><strong>Note:</strong> The WHERE clause is not only used in SELECT statement, it is
+									also used in
 									UPDATE, DELETE statement, etc.!</i></p>
 							<hr>
 							<h2>WHERE Clause Example</h2>
-							<p>The following SQL statement selects all the customers from the country "Mexico", in the "Customers"
+							<p>The following SQL statement selects all the customers from the country "Mexico", in the
+								"Customers"
 								table:</p>
 							<h3>Example</h3>
 							<code><span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br>
@@ -254,7 +274,8 @@
 							<img src="images\IntroSQL\selectCondition_SQL.png">
 							<hr>
 							<h2>Text Fields vs. Numeric Fields</h2>
-							<p>SQL requires single quotes around text values (most database systems will also allow double quotes).
+							<p>SQL requires single quotes around text values (most database systems will also allow
+								double quotes).
 							</p>
 							<p>However, numeric fields should not be enclosed in quotes:</p>
 							<h3>Example</h3>
@@ -277,8 +298,10 @@
 							<p>The WHERE clause can be combined with AND, OR, and NOT operators.</p>
 							<p>The AND and OR operators are used to filter records based on more than one condition:</p>
 							<ul>
-								<li>The AND operator displays a record if all the conditions separated by AND are TRUE.</li>
-								<li>The OR operator displays a record if any of the conditions separated by OR is TRUE.</li>
+								<li>The AND operator displays a record if all the conditions separated by AND are TRUE.
+								</li>
+								<li>The OR operator displays a record if any of the conditions separated by OR is TRUE.
+								</li>
 							</ul>
 							<p>The NOT operator displays a record if the condition(s) is NOT TRUE.</p>
 
@@ -299,14 +322,16 @@
 							<hr>
 
 							<h2>AND Example</h2>
-							<p>The following SQL statement selects all fields from "Customers" where country is "Germany" AND city is
+							<p>The following SQL statement selects all fields from "Customers" where country is
+								"Germany" AND city is
 								"Berlin":</p>
 							<h3>Example</h3>
 							<code> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br><span style="color:mediumblue">WHERE</span> Country=<span style="color:brown">'Germany'</span> <span style="color:mediumblue">AND</span> City=<span style="color:brown">'Berlin'</span>;</code>
 							<hr>
 							<h2>OR Example</h2>
 
-							<p>The following SQL statement selects all fields from "Customers" where city is "Berlin" OR "München":
+							<p>The following SQL statement selects all fields from "Customers" where city is "Berlin" OR
+								"München":
 							</p>
 
 							<h3>Example</h3>
@@ -314,7 +339,8 @@
 							<code><span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br><span style="color:mediumblue">WHERE</span> City=<span style="color:brown">'Berlin'</span><span style="color:mediumblue">OR</span> City=<span style="color:brown">'München'</span>;</code>
 							<br>
 							<br>
-							<p>The following SQL statement selects all fields from "Customers" where country is "Germany" OR "Spain":
+							<p>The following SQL statement selects all fields from "Customers" where country is
+								"Germany" OR "Spain":
 							</p>
 
 							<h3>Example</h3>
@@ -324,7 +350,8 @@
 							<hr>
 
 							<h2>NOT Example</h2>
-							<p>The following SQL statement selects all fields from "Customers" where country is NOT "Germany":</p>
+							<p>The following SQL statement selects all fields from "Customers" where country is NOT
+								"Germany":</p>
 
 
 							<h3>Example</h3>
@@ -335,7 +362,8 @@
 							<h2>Combining AND, OR and NOT</h2>
 							<p>You can also combine the AND, OR and NOT operators.</p>
 
-							<p>The following SQL statement selects all fields from "Customers" where country is "Germany" AND city
+							<p>The following SQL statement selects all fields from "Customers" where country is
+								"Germany" AND city
 								must be "Berlin"
 								OR "München" (use parenthesis to form complex expressions):</p>
 
@@ -356,7 +384,8 @@
 							<h2>The SQL ORDER BY Keyword</h2>
 							<p>The ORDER BY keyword is used to sort the result-set in ascending or
 								descending order.</p>
-							<p>The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending
+							<p>The ORDER BY keyword sorts the records in ascending order by default. To sort the records
+								in descending
 								order, use the DESC keyword.</p>
 
 							<h3>ORDER BY Syntax</h3>
@@ -450,7 +479,8 @@
 							<code> <span style="color:mediumblue">DELETE</span> <span style="color:mediumblue">FROM</span> <em>table_name </em><span style="color:mediumblue">WHERE</span> <em>condition</em>;</code>
 							<br>
 							<br>
-							<p><i><strong>Note:</strong> Be careful when deleting records in a table! Notice the WHERE clause in the
+							<p><i><strong>Note:</strong> Be careful when deleting records in a table! Notice the WHERE
+									clause in the
 									DELETE statement.
 									The WHERE clause specifies which record(s) should be deleted. If
 									you omit the WHERE clause, all records in the table will be deleted!</i></p>
@@ -550,14 +580,16 @@
 						<h3>SQL Like</h3>
 						<div>
 							<h2>The SQL LIKE Operator</h2>
-							<p>The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.</p>
+							<p>The LIKE operator is used in a WHERE clause to search for a specified pattern in a
+								column.</p>
 							<p>There are two wildcards used in conjunction with the LIKE operator:</p>
 							<ul>
 								<li>% - The percent sign represents zero, one, or multiple characters</li>
 								<li>_ - The underscore represents a single character</li>
 							</ul>
 
-							<p><i><strong>Note:</strong> MS Access uses a question mark (?) instead of the underscore (_).</i></p>
+							<p><i><strong>Note:</strong> MS Access uses a question mark (?) instead of the underscore
+									(_).</i></p>
 
 							<p>The percent sign and the underscore can also be used in combinations!</p>
 
@@ -568,7 +600,8 @@
 					<span style="color:mediumblue">WHERE</span> <em>columnN</em> <span style="color:mediumblue">LIKE</span> <em>pattern</em>; </code>
 							<br>
 							<br>
-							<p><i><strong>Tip:</strong> You can also combine any number of conditions using AND or OR operators.</i>
+							<p><i><strong>Tip:</strong> You can also combine any number of conditions using AND or OR
+									operators.</i>
 							</p>
 
 							<p>Here are some examples showing different LIKE operators with '%' and '_' wildcards:</p>
@@ -587,7 +620,8 @@
 							<code> <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br><span style="color:mediumblue">WHERE</span> CustomerName <span style="color:mediumblue">LIKE</span> <span style="color:brown">'a%'</span>; </code>
 							<br>
 							<br>
-							<p>The following SQL statement selects all customers with a CustomerName ending with "a":</p>
+							<p>The following SQL statement selects all customers with a CustomerName ending with "a":
+							</p>
 
 							<h3>Example</h3>
 							<code><span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br><span style="color:mediumblue">WHERE</span> CustomerName <span style="color:mediumblue">LIKE</span> <span style="color:brown">'%a'</span>; </code>
@@ -651,7 +685,8 @@
 							<hr>
 
 							<h2>IN Operator Examples</h2>
-							<p>The following SQL statement selects all customers that are located in "Germany", "France" and "UK":</p>
+							<p>The following SQL statement selects all customers that are located in "Germany", "France"
+								and "UK":</p>
 
 							<h3>Example</h3>
 
@@ -659,7 +694,8 @@
 					</code>
 							<br>
 							<br>
-							<p>The following SQL statement selects all customers that are NOT located in "Germany", "France" or "UK":
+							<p>The following SQL statement selects all customers that are NOT located in "Germany",
+								"France" or "UK":
 							</p>
 
 							<h3>Example</h3>
@@ -680,7 +716,8 @@
 						<h3>SQL Between</h3>
 						<div>
 							<h2>The SQL BETWEEN Operator</h2>
-							<p>The BETWEEN operator selects values within a given range. The values can be numbers, text, or dates.
+							<p>The BETWEEN operator selects values within a given range. The values can be numbers,
+								text, or dates.
 							</p>
 							<p>The BETWEEN operator is inclusive: begin and end values are included.&nbsp;</p>
 							<h3>BETWEEN Syntax</h3>
@@ -731,7 +768,8 @@
 							<hr>
 
 							<h2>NOT BETWEEN Text Values Example</h2>
-							<p>The following SQL statement selects all products with a ProductName NOT BETWEEN 'Carnarvon
+							<p>The following SQL statement selects all products with a ProductName NOT BETWEEN
+								'Carnarvon
 								Tigers' and 'Mozzarella di Giovanni':</p>
 
 							<h3>Example</h3>
@@ -745,7 +783,8 @@
 							<img src="images\IntroSQL\betweenDates_SQL.png">
 
 							<h2>BETWEEN Dates Example</h2>
-							<p>The following SQL statement selects all orders with an OrderDate BETWEEN '01-July-1996' and
+							<p>The following SQL statement selects all orders with an OrderDate BETWEEN '01-July-1996'
+								and
 								'31-July-1996':</p>
 
 							<h3>Example</h3>
@@ -794,7 +833,8 @@
 							<p>Here are the different types of the JOINs in SQL:</p>
 							<ul>
 								<li><b>(INNER) JOIN</b>: Returns records that have matching values in both tables</li>
-								<li><b>LEFT (OUTER) JOIN</b>: Return all records from the left table, and the matched records from the
+								<li><b>LEFT (OUTER) JOIN</b>: Return all records from the left table, and the matched
+									records from the
 									right table</li>
 								<li><b>RIGHT (OUTER) JOIN</b>: Return all records from the right table, and the matched
 									records from the left table</li>
@@ -877,7 +917,8 @@
 							<img src="images\IntroSQL\left_join2_SQL.png">
 							<br>
 							<br>
-							<p>The following SQL statement will select all customers, and any orders they might have:</p>
+							<p>The following SQL statement will select all customers, and any orders they might have:
+							</p>
 
 							<code> <span style="color:mediumblue">SELECT</span> Customers.CustomerName, Orders.OrderID<br><span style="color:mediumblue">FROM</span> Customers<br><span style="color:mediumblue">LEFT</span> <span style="color:mediumblue">JOIN</span> Orders
 				 <span style="color:mediumblue">ON</span> Customers.CustomerID = Orders.CustomerID<br><span style="color:mediumblue">ORDER</span> <span style="color:mediumblue">BY</span> Customers.CustomerName;</code>
@@ -890,8 +931,10 @@
 						<h3>SQL Right Join</h3>
 						<div>
 							<h2>SQL RIGHT JOIN Keyword</h2>
-							<p>The RIGHT JOIN keyword returns all records from the right table (table2), and the matched records from
-								the left table (table1). The result is NULL from the left side, when there is no match.</p>
+							<p>The RIGHT JOIN keyword returns all records from the right table (table2), and the matched
+								records from
+								the left table (table1). The result is NULL from the left side, when there is no match.
+							</p>
 
 							<h3>Right JOIN Syntax</h3>
 
@@ -914,13 +957,15 @@
 							<img src="images\IntroSQL\right_join1_SQL.png">
 							<br>
 							<br>
-							<p>The following SQL statement will return all employees, and any orders they might have placed:</p>
+							<p>The following SQL statement will return all employees, and any orders they might have
+								placed:</p>
 
 							<code><span style="color:mediumblue">SELECT</span> Orders.OrderID, Employees.LastName, Employees.FirstName<br><span style="color:mediumblue">FROM</span> Orders<br><span style="color:mediumblue">RIGHT</span> <span style="color:mediumblue">JOIN</span> Employees
 				 <span style="color:mediumblue">ON</span> Orders.EmployeeID = Employees.EmployeeID<br><span style="color:mediumblue">ORDER</span> <span style="color:mediumblue">BY</span> Orders.OrderID;</code>
 							<br>
 							<br>
-							<p><i><strong>Note:</strong> The RIGHT JOIN keyword returns all records from the right table (Employees),
+							<p><i><strong>Note:</strong> The RIGHT JOIN keyword returns all records from the right table
+									(Employees),
 									even if there are no matches in the left table (Orders).</i></p>
 						</div>
 						<h3>SQL Full Join</h3>
@@ -969,7 +1014,8 @@
 
 							<p><i><strong>Note: The examples in this chapter will not work in Firefox and
 										Microsoft Edge!</strong></i></p>
-							<p><i>Comments are not supported in Microsoft Access databases. Firefox and Microsoft Edge are using
+							<p><i>Comments are not supported in Microsoft Access databases. Firefox and Microsoft Edge
+									are using
 									Microsoft Access database in our examples.</i></p>
 
 
@@ -1035,6 +1081,181 @@
 				</div>
 			</div>
 			<br>
+			<h3>
+				<i>Import a BACPAC File from:</i>  data/trainingData.bacpac
+				
+			</h3>
+			<hr>
+			<p>Import a data-tier application (DAC) file - a .bacpac file - to create a copy of the original database,
+				with
+				the data, on a new instance of the Database Engine, or to Azure SQL Database. Export-import operations
+				can
+				be combined to migrate a DAC or database between instances, or to create a logical backup, such as
+				creating
+				an on-premise copy of a database deployed in SQL Database.</p>
+
+			<h2>Before You Begin</h2>
+			The import process builds a new DAC in two stages.
+			<ol>
+				<li>The import creates a new DAC and associated database using the DAC definition stored in the export
+					file, the
+					same way a DAC deploy creates a new DAC from the definition in a DAC package file.</li>
+
+				<li>The import bulk copies in the data from the export file.</li>
+			</ol>
+			<h2>SQL Server Utility</h2>
+			<p>If you import a DAC to an instance of the Database Engine, the imported DAC is incorporated into the SQL
+				Server Utility the next time the utility collection set is sent from the instance to the utility control
+				point. The DAC will then be present in the <b>Deployed Data-tier Applications</b> node of the Management
+				Studio
+				Utility Explorer and reported in the <b>Deployed Data-tier Applications</b> details page.</p>
+
+			<h2>Database Options and Settings</h2>
+			<p>By default, the database created during the import will have all of the default settings from the CREATE
+				DATABASE statement, except that the database collation and compatibility level are set to the values
+				defined
+				in the DAC export file. A DAC export file uses the values from the original database.</p>
+
+			<p>Some database options, such as TRUSTWORTHY, DB_CHAINING, and HONOR_BROKER_PRIORITY, cannot be adjusted as
+				part of the import process. Physical properties, such as the number of filegroups, or the numbers and
+				sizes
+				of files cannot be altered as part of the import process. After the import completes, you can use the
+				ALTER
+				DATABASE statement, SQL Server Management Studio, or SQL Server PowerShell to tailor the database.</p>
+
+			<h2>Limitations and restrictions</h2>
+			<p>A DAC can be imported to SQL Database, or an instance of the Database Engine running SQL Server 2005
+				(9.x)
+				Service Pack 4 (SP4) or later. If you export a DAC from a higher version, the DAC may contain objects
+				not
+				supported by SQL Server 2005 (9.x). You cannot deploy those DACs to instances of SQL Server 2005 (9.x).
+			</p>
+
+			<h2>Prerequisites</h2>
+			<p>We recommend that you do not import a DAC export file from unknown or untrusted sources. Such files could
+				contain malicious code that might execute unintended Transact-SQL code or cause errors by modifying the
+				schema. Before you use an export file from an unknown or untrusted source, unpack the DAC and examine
+				the
+				code, like stored procedures and other user-defined code.</p>
+
+			<h2>Security</h2>
+			<p>To improve security, SQL Server Authentication logins are stored in a DAC export file without a password.
+				When the file is imported, the login is created as a disabled login with a generated password. To enable
+				the
+				logins, sign in using a login that has ALTER ANY LOGIN permission and use ALTER LOGIN to enable the
+				login
+				and assign a new password that can be communicated to the user. This is not needed for Windows
+				Authentication logins because their passwords are not managed by SQL Server.</p>
+
+			<h2>Permissions</h2>
+			<p>A DAC can only be imported by members of the sysadmin or serveradmin fixed server roles, or by logins
+				that
+				are in the dbcreator fixed server role and have ALTER ANY LOGIN permissions. The built-in SQL Server
+				system
+				administrator account named sa can also import a DAC. Importing a DAC with logins to SQL Database
+				requires
+				membership in the loginmanager or serveradmin roles. Importing a DAC without logins to SQL Database
+				requires
+				membership in the dbmanager or serveradmin roles.</p>
+
+			<h2>Using the Import Data-tier Application Wizard</h2>
+			<b>To launch the wizard, use the following steps:</b>
+			<ol>
+				<li>Connect to the instance of SQL Server, whether on-premise or in SQL Database.</li>
+
+				<li>In Object Explorer, right-click on Databases, and then select the Import Data-tier Application menu
+					item to launch the wizard.</li>
+
+				<li>Complete the wizard dialogs:</li>
+				<ul>
+					<li>Introduction Page</li>
+
+					<li>Import Settings Page</li>
+
+					<li>Database Settings Page</li>
+
+					<li>Summary Page</li>
+
+					<li>Progress Page</li>
+
+					<li>Results Page</li>
+				</ul>
+			</ol>
+			<h3>Introduction Page</h3>
+			<p>This page describes the steps for the Data-tier Application Import Wizard.</p>
+
+			<h4>Options</h4>
+
+			<p>Do not show this page again. - Click the check box to stop the Introduction page from being displayed in
+				the
+				future. Next - Proceeds to the Import Settings page. Cancel - Cancels the operation and closes the
+				wizard.</p>
+
+			<h3>Import Settings Page</h3>
+			Use this page to specify the location of the .bacpac file to import.
+
+			<p>Import from local disk - Click Browse... to navigate the local computer, or specify the path in the space
+				provided. The path name must include a file name and the .bacpac extension.</p>
+
+			<p>Import from Azure - Imports a BACPAC file from a Microsoft Azure container. You must connect to a
+				Microsoft
+				Azure container to validate this option. Note that the Import from Azure option also requires that you
+				specify a local directory for the temporary file. The temporary file will be created at the specified
+				location and will remain there after the operation completes.</p>
+
+			<p>When browsing Azure, you will be able to switch between containers within a single account. You must
+				specify
+				a single .bacpac file to continue the import operation. You can sort columns by Name, Size, or Date
+				Modified.</p>
+
+			<p>To continue, specify the .bacpac file to import, and then click Open.</p>
+
+			<h4>Database Settings Page</h4>
+			<p>Use this page to specify details for the database that will be created.</p>
+
+			<p><b>For a local instance of SQL Server:</b></p>
+			<ul>
+				<li>New database name - Provide a name for the imported database.</li>
+
+				<li>Data file path - Provide a local directory for data files. Click Browse... to navigate the local
+					computer,
+					or specify the path in the space provided.</li>
+
+				<li>Log file path - Provide a local directory for log files. Click Browse... to navigate the local
+					computer, or
+					specify the path in the space provided.</li>
+			</ul>
+			<p>To continue, click <b>Next.</b></p>
+
+			<h4>Validation Page</h4>
+			<p>Use this page to review any issues that block the operation. To continue, resolve blocking issues and
+				then
+				click <b>Re-run Validation</b> to ensure that validation is successful.</p>
+
+			<p>To continue, click <b>Next</b>.</p>
+
+			<h4>Summary Page</h4>
+			<p>Use this page to review the specified source and target settings for the operation. To complete the
+				import
+				operation using the specified settings, click <b>Finish</b>. To cancel the import operation and exit the
+				wizard,
+				click <b>Cancel</b>.</p>
+
+			<h4>Progress Page</h4>
+			<p>This page displays a progress bar that indicates the status of the operation. To view detailed status,
+				click
+				the View details option.</p>
+
+			<p>To continue, click <b>Next.</b></p>
+
+			<h4>Results Page</h4>
+			<p>This page reports the success or failure of the import and create database operations, showing the
+				success
+				or failure of each action. Any action that encountered an error will have a link in the Result column.
+				Click
+				the link to view a report of the error for that action.</p>
+
+			<p>Click <b>Close</b> to close the wizard.</p>
 			<br>
 	</div>
 
