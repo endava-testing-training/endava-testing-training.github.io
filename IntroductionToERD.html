@@ -178,16 +178,66 @@
 					number of attributes to still be a super key. An entity set may have more than one candidate key. <strong>Primary key:</strong> A candidate key chosen by the database designer 
 					to uniquely identify the entity set. <strong>Foreign key:</strong> Identifies the relationship between entities.
 					</p>
+					<h3>Primary Key</h3>
+					<p>Primary Key* or identifier is an attribute or a set of attributes that uniquely identifies an instance of the entity. For example, for a student entity, 
+					student number is the primary key since no two students have the same student number. We can have only one primary key in a table. It identify uniquely every row and it cannot be null.</p>
+					<h3>Foreign key</h3>
+					<p>A foreign key+ (sometimes called a referencing key) is a key used to link two tables together. Typically you take the primary key field from one table 
+					and insert it into the other table where it becomes a foreign key (it remains a primary key in the original table). We can have more than one foreign key in a table.</p>
 				  </div>
 				  <h3>Relationships</h3>
 				  <div>
-					<p>Relationships are the associations between the entities. Verbs often describe relationships between entities. 
-					We will use Crow's Foot Symbols to represent the relationships. Three types of relationships are discussed in this lab. 
-					If you read or hear cardinality ratios, it also refers to types of relationships.</p>
+					<p>How entities act upon each other or are associated with each other. Think of relationships as verbs. For example, the named student might register for a course. The two entities 
+					would be the student and the course, and the relationship depicted is the act of enrolling, connecting the two entities in that way. Relationships are typically shown as diamonds or 
+					labels directly on the connecting lines.</p>
+					<p>Relationships are the associations between the entities. Verbs often describe relationships between entities.</p>
 					<br>
 					<br>
-					<img src="images\IntroERD\Relationships.png">
+					<img src="images\IntroERD\Relationships1.png">
 					<br>
+					<br>
+					<p>
+                    <strong>Recursive relationship:</strong> The same entity participates more than once in the relationship.
+                    </p>
+					
+					</div>
+					<h3>Attributes</h3>
+				  <div>
+					<p>A property or characteristic of an entity. Often shown as an oval or circle.</p>
+					<br>
+					<br>
+					<img src="images\IntroERD\Attributes.png">
+					<br>
+					<br>
+					<p>Attributes are facts or description of entities. They are also often nouns and become the columns of the table. For example, for entity student, the attributes can be first name, last name, email, address and phone numbers.<p>
+					
+					<p><strong>Descriptive attribute:</strong> A property or characteristic of a relationship (versus of an entity.)</P>
+					<br>
+					<p><strong>Attribute categories:</strong> Attributes are categorized as simple, composite, derived, as well as single-value or multi-value. <strong>Simple:</strong> Means the attribute value is 
+					atomic and can’t be further divided, such as a phone number. <strong>Composite:</strong> Sub-attributes spring from an attribute. <strong>Derived:</strong> Attributed is calculated or otherwise derived from another attribute, such as age from a birthdate.</p>
+					<br>
+					<br>
+					<img src="images\IntroERD\Attributes1.png">
+					<br>
+					<br>
+					<p><strong>Multi-value:</strong> More than one attribute value is denoted, such as multiple phone numbers for a person.</p>
+				    <br>
+					<br>
+					<img src="images\IntroERD\Attributes2.png">
+					<br>
+					<br>
+					<p><strong>Single-value:</strong> Just one attribute value. The types can be combined, such as: simple single-value attributes or composite multi-value attributes.</p>
+				  
+				  </div>
+				  <h3>Cardinality</h3>
+				  <div>
+				     <p>Defines the numerical attributes of the relationship between two entities or entity sets. The three main cardinal relationships are one-to-one, one-to-many, and many-many. 
+					 A <strong>one-to-one example</strong> would be one student associated with one mailing address. A <strong>one-to-many example (or many-to-one, depending on the relationship direction):</strong> One student 
+					 registers for multiple courses, but all those courses have a single line back to that one student. <strong>Many-to-many example:</strong> Students as a group are associated with multiple faculty 
+					 members, and faculty members in turn are associated with multiple students.</p>
+					<br>
+					<br>
+					<img src="images\IntroERD\Cardinality.png">
 					<br>
 					<h3>One to One Relationship (1:1)</h3>
 					<p>
@@ -221,23 +271,10 @@
 					<li>Each student can take many classes, and each class can be taken by many students.</li>
 					<li>Each consumer can buy many products, and each product can be bought by many consumers.</li>
 					</ul>
-					<p>
-					The detailed Crow's Foot Relationship symbols can be found here. Crow's Foot Relationship Symbols
-					<br>
-					Many to many relationships are difficult to represent. We need to decompose a many to many (M:M) relationship into two one-to-many (1:M) relationships.
-					</p>
-					</div>
-					<h3>Attributes</h3>
-				  <div>
-					<p>Attributes are facts or description of entities. They are also often nouns and become the columns of the table. For example, for entity student, 
-					the attributes can be first name, last name, email, address and phone numbers.</p>
-					<h3>Primary Key</h3>
-					<p>Primary Key* or identifier is an attribute or a set of attributes that uniquely identifies an instance of the entity. For example, for a student entity, 
-					student number is the primary key since no two students have the same student number. We can have only one primary key in a table. It identify uniquely every row and it cannot be null.</P>
-					<h3>Foreign key</h3>
-					<p>A foreign key+ (sometimes called a referencing key) is a key used to link two tables together. Typically you take the primary key field from one table 
-					and insert it into the other table where it becomes a foreign key (it remains a primary key in the original table). We can have more than one foreign key in a table.</P>
 					
+					<p><strong>Cardinality views:</strong> Cardinality can be shown as look-across or same-side, depending on where the symbols are shown.</p>
+					<br>
+					<p><strong>Cardinality constraints:</strong> The minimum or maximum numbers that apply to a relationship.</p>
 				  </div>
 				  <h3>Uses of entity relationship diagrams</h3>
 				  <div>
