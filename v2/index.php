@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>RSD-Endava - Testing Training</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script defer="" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Menu -->
+    <link rel="stylesheet" href="css/menu.css">
+
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div id='cssmenu'>
+            <ul>
+                <li class='active'><a href='index.html'><span>Home</span></a></li>   
+                <li class='has-sub'><a href='#'><span>Recommended sites</span></a>
+                    <ul>
+                        <li><a href='https://www.ministryoftesting.com/' target="_blank"><span>Ministry of Testing</span></a></li>
+                        <li class='last'><a href='https://www.istqb.org' target="_blank"><span>ISTQB Certifications</span></a></li>
+                    </ul>
+                </li>
+                <li class='has-sub'><a href='#'><span>Useful links</span></a>
+                    <ul>
+                        <li><a href='youtube-scrum.html'><span>About Scrum</span></a></li>
+                        <li class='last'><a href='youtube-agile.html'><span>12 Agile Principles</span></a></li>
+                    </ul>
+                </li>
+                <li class=''><a href='sucstories.html'><span>Our success stories</span></a></li>
+                <li class=''><a href='aboutus.html'><span>About us</span></a></li>
+                <li class='has-sub last'><a href='#'><span>Contact</span></a>
+                    <ul>
+                        <li><a href='https://goo.gl/97oRXH' target="_blank"><span>MS Teams</span></a></li>
+                        <li><a href='https://goo.gl/NoCM4J' target="_blank"><span>Confluence</span></a></li>
+                        <li class='last'><a href='https://dev.azure.com/GiselaVivas/Testing%20Management' target="_blank"><span>Our Board</span></a></li>
+                    </ul>
+                </li>
+                <a href='index.html'><img class="endavalogo" src="images/logo-endava-modified-white.png"></a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- start body -->
+    <div class="container">
+
+        <!-- start container -->
+        <div class="row">
+
+            <header class="site-header" role="banner">
+
+                <div class="wrapper">
+
+                    <!--<a class="site-title" rel="author" href="/">Endava - Testing Training</a>-->
+
+                    <nav class="site-nav">
+
+                        <div class="trigger">
+                            <!--<a class="page-link" href="/about/">¿Endava - Testing Training?</a>-->
+                            <!--<a class="page-link" href="/cursos/">Endava Current training - Testing Training</a>-->
+                            <!--<a class="page-link" href="/faq/">Endava - Testing Training FAQ</a>-->
+                            <!--<a class="page-link" href="/"></a>-->
+                        </div>
+                    </nav>
+
+                </div>
+
+            </header>
+        </div>
+
+        <main class="page-content" aria-label="Content">
+            <div class="wrapper">
+                <div class="home">
+                <!--        <img src="https://www.endava.com/-/media/EndavaDigital/Endava/Images/MetaDataImages/preview-image.ashx"
+                        alt="icono" class="img-responsive center-block img-logo" />
+                -->                     
+                    <div class="typewriter rounded">
+                        <h2>Home</h2>
+                        <h1>Basic Testing Training</h1>
+                    </div>
+                    <h2>Main Goals </h2>
+                    <ul>
+                        <li>Our purpose of this training is share and impart knowledge.</li>
+                        <li>To familiarize the audience with the terminology used in the testing work.</li>
+                        <li>To arrive at a common understanding of the scope of testing activity.</li>
+                        <li>Execute a program with the intent of finding errors to:</li>
+                        <ul>
+                            <li>Determine whether system meets specifications</li>
+                            <li>Determine whether system meets user’s needs</li>
+                        </ul>
+                        </li>
+                        <li>Understand about techniques for planning tests.</li>
+                        <li>Apply techniques of software testing in projects.</li>
+                        <li>Select the appropriate testing techniques and objectives.</li>
+                        <li>Continuously improve the testing process.</li>
+
+
+                    </ul>
+                    <hr />
+                    <h2>Topics to cover</h2>
+                    <ul>
+                        <li>
+                            <strong>
+                                <a href="Topics.html" >View all topics</a>
+                            </strong>
+
+                        </li>
+                    </ul>
+                    <hr />
+                    <h2>Material to download</h2>
+                    <ul>
+                        <li>
+                            <strong>
+                                <a href="RSD- Endava initial testing Training.pptx" download>Main reading</a>
+                            </strong>
+                        </li>
+
+                        <li>
+                            <strong>
+                                <a href="RSD-Endava test cases structure.pptx" download>Test cases structure</a>
+                            </strong>
+                        </li>
+                        <li>
+                            <strong>
+                                <a href="RSD-Scrum basics.pptx" download>Scrum basics</a>
+                            </strong>
+                        </li>
+                    </ul>
+                    <hr />
+                        <h2>Material to Read</h2>
+                        <ul>
+                            <li>
+                            <strong>
+                                <a href="TestGuide.html">Testing Checklists</a>
+                            </strong>
+
+                        </li>
+                        <li>
+                            <strong>
+                                <a href="UIElements.html">Elements of User
+                                    Interface</a>
+                            </strong>
+
+                        </li>
+                        <li>
+                            <strong>
+                                <a href="IntroductionToERD.html">Introduction to Entity Relationship Diagram</a>
+                            </strong>
+            
+                        </li>
+						<li>
+                            <strong>
+                                <a href="IntroductionToSQL.html">Introduction to SQL</a>
+                            </strong>
+            
+                        </li>
+
+                    </ul>
+                    <hr />
+                    <h2>Exercises</h2>
+
+                    <ul>
+                        <li>
+                            <strong>
+                                Temperature Converter:
+                            </strong>
+
+                            <a href="https://endava-testing-training.github.io/Celfar/specifications.html">Requirements</a>.
+
+                            Versions:
+                            <a href="https://endava-testing-training.github.io/Celfar/?v=1">Version 1</a>,
+                            <a href="https://endava-testing-training.github.io/Celfar/?v=2">Version 2</a>,
+                            <a href="https://endava-testing-training.github.io/Celfar/?v=3">Version 3</a>,
+                            <a href="https://endava-testing-training.github.io/Celfar/?v=4">Version 4</a> and
+                            <a href="https://endava-testing-training.github.io/Celfar">Version Final</a>
+                        </li>
+
+                        <li>
+                            <strong>
+                                Argentina Provinces
+                            </strong>: Data searcher about Argentina Provinces.
+
+
+                            <a href="https://endava-testing-training.github.io/ProvinceSearcher/specifications.html">Requeriments</a>.
+
+                            Versions:
+                            <a href="https://endava-testing-training.github.io/ProvinceSearcher/province_searcher_1.html">Version 1</a>,
+                            <a href="https://endava-testing-training.github.io/ProvinceSearcher/province_searcher_2.html">Version 2</a>,
+                            <a href="https://endava-testing-training.github.io/ProvinceSearcher/province_searcher_3.html">Version 3</a>
+                            and
+                            <a href="https://endava-testing-training.github.io/ProvinceSearcher/province_searcher_4.html">Version 4</a>
+                        </li>
+
+                        <li>
+                            <strong>
+                                Contacts
+                            </strong>
+                            <strong>
+                            <a href="https://jira.endava.com/secure/RapidBoard.jspa?rapidView=2930&projectKey=RSDTS001&view=planning.nodetail">Contacts Board </a>.
+                            </strong>
+                            <a href="https://endava-testing-training.github.io/Contacts/specifications.html">Requirements</a>.
+
+                            Versions:
+                            <a href="https://endava-testing-training.github.io/Contacts/contacts.html?v=1">Version 1</a>,
+                            <a href="https://endava-testing-training.github.io/Contacts/contacts.html?v=2">Version 2</a>,
+                            <a href="https://endava-testing-training.github.io/Contacts/contacts.html?v=3">Version 3</a>,
+                            <a href="https://endava-testing-training.github.io/Contacts/contacts.html">Version final</a> and
+                            <a href="https://endava-testing-training.github.io/Contacts/contacts_improvements.html">Version improvements</a> 
+                        </li>
+
+                    </ul>
+
+                    <hr />
+
+
+                    <h2>Tools to track test cases </h2>
+
+                    <ul>
+                        <li>
+                            <strong>
+                                <a href="RSD- Generic template to report  Bugs.docx" download>Generic template to report Bugs</a>
+                            </strong>
+                        </li>
+                        <li>
+                            <strong>
+                                <a href="RSD-Template-TestCases.xlsx" download>Test cases - generic template </a>
+                            </strong>
+                        </li>
+
+                        <li>
+                            <strong>
+                                <a href="https://jira.endava.com/" target=_blank>Jira tracking </a>
+                            </strong>
+                        </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </main>
+
+            <hr />
+<section class="footer clearfix container">
+            <div class="row">
+                <div class="offset-col-1 col-lg-12 col-md-12 col-sm-12 col-xs-12 inner">
+                    <div class="social pull-right">
+                        
+                                    <a href="https://www.facebook.com/endava" rel="me" itemprop="sameAs" aria-label="visit us on " target="_blank" title=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/endava" rel="me" itemprop="sameAs" aria-label="visit us on " target="_blank" title=""><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/company/endava" rel="me" itemprop="sameAs" aria-label="visit us on " target="_blank" title=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.instagram.com/endava/" rel="me" itemprop="sameAs" aria-label="visit us on " target="_blank" title=""><i class="fab fa-instagram"></i></a>
+                                
+                    </div>
+                    <div class="footer-logo pull-left">
+                        <a href="/en" title="" class="nohover box-link"></a>
+             
+                                    <img src="images/logo-endava.png" alt="Endava" width="131" height="44">
+                           
+                    </div>
+                    <div class="copyright pull-left light fsize-xxs">
+                        Copyright Endava 2019. All rights reserved. Rosario, Argentina.
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        </div>
+    </body>
+
+    </html>
