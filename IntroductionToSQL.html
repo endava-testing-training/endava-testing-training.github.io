@@ -467,8 +467,71 @@
 							<p>The following SQL lists all customers with a value in the "Address" field:</p>
 							<h3>Example</h3>
 							<code>  <span style="color:mediumblue">SELECT</span> CustomerName, ContactName, Address<br><span style="color:mediumblue">FROM</span> Customers<br><span style="color:mediumblue">WHERE</span> Address <span style="color:mediumblue">IS</span> <span style="color:mediumblue">NOT</span> <span style="color:mediumblue">NULL</span>;</code>
-						</div>
+							</div>
+							<h3>SQL Update</h3>
+							<div>
+							<h2>The SQL UPDATE Statement</h2>
+					<p>The UPDATE statement is used to modify the existing records in a table.</p>
 
+					<h3>UPDATE Syntax</h3>
+					<code> <span style="color:mediumblue">UPDATE</span> <em>table_name</em><br><span style="color:"></span></code>
+					<code> <span style="color:mediumblue">SET</span> <em>column1 </em>=<em> value1</em>,<em> column2 </em>=<em> value2</em>, ...<br><span style="color:"></span></code> 
+					<code><span style="color:mediumblue">WHERE</span> <em>condition</em>; </code>
+					<br>
+					<br>
+					<p><i><strong>Note:</strong> Be careful when updating records in a table! Notice the WHERE clause in the 
+					UPDATE statement.
+					The WHERE clause specifies which record(s) that should be updated. If 
+					you omit the WHERE clause, all records in the table will be updated!</i></p>
+					<hr>
+
+					<h2>UPDATE Table</h2>
+					<p>The following SQL statement updates the first customer (CustomerID = 1) with a new contact person <em>and</em> 
+					a new city.</p>
+					<h3>Example</h3>
+					<p>Original Table:</p><p>
+					<img src="images\IntroSQL\table1_SQL.png">
+					<br>
+					<br>
+					<code> <span style="color:mediumblue">UPDATE</span> Customers<br><span style="color:"></span></code>
+					<code> <span style="color:mediumblue">SET</span> ContactName = <span style="color:brown">'Alfred Schmidt'</span>, City= <span style="color:brown">'Frankfurt'</span><br><span style="color:"></span></code>
+					<code> <span style="color:mediumblue">WHERE</span> CustomerID = <span style="color:">1</span>;<span style="color:"></span> </code>
+					<br>
+					<br>
+					</p><p>The selection from the "Customers" table will now look like this:</p>
+					<img src="images\IntroSQL\update_SQL.png">
+					<hr>
+
+					<h2>UPDATE Multiple Records</h2>
+					<p>It is the WHERE clause that determines how many records that will be updated.</p>
+					<p>The following SQL statement will 
+					update the contactname to "Juan" for all records where country is "Mexico":</p>
+					  <h3>Example</h3>
+					<code><span style="color:mediumblue">UPDATE</span> Customers<br></code>
+					<code><span style="color:mediumblue">SET</span> ContactName=<span style="color:brown">'Juan'</span><br></code>
+					<code><span style="color:mediumblue">WHERE</span> Country=<span style="color:brown">'Mexico'</span>;<span style="color:">
+					</span> </code>
+					<br>
+					<br>
+					<p>The selection from the "Customers" table will now look like this:</p>
+					<img src="images\IntroSQL\update1_SQL.png">
+					<hr>
+
+					<h2>Update Warning!</h2>
+					<p>Be careful when updating records. If you omit the WHERE clause, ALL records 
+					will be updated!</p>
+
+					  <h3>Example</h3>
+					<code><span style="color:mediumblue">UPDATE</span> Customers<br></code>
+					<code><span style="color:mediumblue">SET</span> ContactName=<span style="color:brown">'Juan'</span>;<span style="color:">
+					</span> </code>
+					<br>
+					<br>
+					<p>The selection from the "Customers" table will now look like this:</p>
+					<img src="images\IntroSQL\update2_SQL.png">	
+					<hr>
+						</div>
+						
 						<h3>SQL Delete</h3>
 						<div>
 							<h2>The SQL DELETE Statement</h2>
